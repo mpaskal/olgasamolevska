@@ -1,56 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olga Samolevska</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Olga Samolevska</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
         <div class="navbar" id="topNavbar">
-            <a href="index.html"><img src="assets/images/Olga-main2.jpg" class="logo-img" alt="Olga Samolevskaya"></a>
-            <a href="index.html" class="active">Olga Samolevskaya</a>
-            <a href="#movie">Фільми</a>
-            <a href="poems">Вiршi</a>
-            <a href="ruspoems">Стихи</a>
-            <a href="#articles">Статті</a>
-            <a href="#contacts">Контакти</a>
-            <a href="javascript:void(0);" class="icon" onclick="navBtnClick()">
-                <i class="uil uil-bars"></i>
-            </a>
-        </div>
-    </nav>
-    <section class="home-page">
-       <div class="home-content">
-            The dog (Canis familiaris[4][5] or Canis lupus familiaris[5]) is a domesticated descendant of the wolf. Also called the domestic dog, it is derived from extinct Pleistocene wolves,[6][7] and the modern wolf is the dog's nearest living relative.[8] Dogs were the first species to be domesticated[9][8] by hunter-gatherers over 15,000 years ago[7] before the development of agriculture.[1] Due to their long association with humans, dogs have expanded to a large number of domestic individuals[10] and gained the ability to thrive on a starch-rich diet that would be inadequate for other canids.[11]
-
-            The dog has been selectively bred over millennia for various behaviors, sensory capabilities, and physical attributes.[12] Dog breeds vary widely in shape, size, and color. They perform many roles for humans, such as hunting, herding, pulling loads, protection, assisting police and the military, companionship, therapy, and aiding disabled people. Over the millennia, dogs became uniquely adapted to human behavior, and the human–canine bond has been a topic of frequent study.[13] This influence on human society has given them the sobriquet of "man's best friend".[14]
-       </div>
-    </section>
-    <footer class="footer">
-            <div class="singleCol social-media-icons-white d-flex justify-content-evenly">
-              <a
-                href="https://www.facebook.com/olga.samolevska"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={faFacebook} />
-              </a>
-              <a
-                href="https://www.youtube.com/channel/UCdgv1x-RtCYk_M3uOlRH86A"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={faYoutube} />
-              </a>
+            <div class="navbar-home">
+                <a href="index.html"><img src="assets/images/Olga-main2.jpg" class="logo-img" alt="Olga Samolevskaya"></a>
+                <a href="index.html" class="navbar-title active">Ольга Самолевська</a>
             </div>
-            <small class="copyright"></small> 
-    </footer>
-</body>
+            <ul class="navbar-links">
+                <li><a href="#movie" >Фільми</a></li>
+                <li><a href="poems">Вiршi</a></li>
+                <li><a href="ruspoems">Стихи</a></li>
+                <li><a href="#articles">Статті</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="navBtnClick()">
+                    <i class="uil uil-bars"></i>
+                </a></li>
+            </ul>
+        </div>
+        <div class="home-page">
+            <section class="home_top">
+                <img
+                  class="home_about_img"
+                  src="assets/images/Olga_Jan23.jpg"
+                  alt="Olga presentation"
+                />
+                <article class="home_about_text_first">
+                  Ця Лисичка з Хрещатику. Сиділа собі у вітрині, аж тут я іду, 5-річна,
+                  з тьотею Аннушкою. І далі без Лисички іти не хочу. Аннушка
+                  перерахувала свої гроші і потягнулася за мною до продавців. А вони
+                  життєрадісно відповіли, що Лисичка не продається, бо працює в
+                  композиції для вітрини. Утираючи мої рясні сльози, Аннушка впросила
+                  продавців відкрити вітрину. Коли ЛИСИЧКА опинилася в моїх нахабних
+                  лапах, Аннушка почула, що просять за неї занадто багато, бо вона вміє
+                  розмовляти. І тоді Аннушка прийняла рішення вигрести з гаманця все. (а
+                  працювала вона у Жовтневому палаці гардеробницею, і я виросла за
+                  лаштунками цього палацу). Лисичка стала кіноактрисою, для цього я
+                  стала кінорежисером. Аннушеньки нема вже 14 років. У день її пам'яті
+                  Лисичку показали на екрані Будинку кіно.
+                </article>
+                <div class="clear"></div>
+              </section>
+              <section class="video_olga-wrap">
+                <div class="video_olga">
+                 
+                </div>
+              </section>
+        </div>
+        <footer class="footer">
+                <div class="singleCol social-media-icons-white d-flex justify-content-evenly">
+                    <a
+                        href="https://www.facebook.com/olga.samolevska"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                    <i class="uil uil-facebook"></i>
+                    </a>
+                    <a
+                        href="https://www.youtube.com/channel/UCdgv1x-RtCYk_M3uOlRH86A"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i class="uil uil-youtube"></i>
+                    </a>
+                </div>
+                <small class="copyright"></small> 
+        </footer>
+    </body>
 </html>
