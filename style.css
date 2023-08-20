@@ -78,6 +78,16 @@ body {
 }
 
 .home_about_img {
+  float: left;
+  margin-left: 1rem;
+  width: 250px;
+  height: 300px;
+  box-shadow:  0 -5px 5px 5px rgba(223, 189, 105, 0.934), 
+               0 5px 5px 5px rgba(223, 189, 105, 0.934),
+               0 2px 5px 10px rgba(0, 0, 0, .6);
+}
+
+.red_img {
   float: right;
   margin-left: 1rem;
   width: 250px;
@@ -182,7 +192,7 @@ li {
 
 .singleCol {
   width: 140px;
-  height: 46Wpx;
+  height: 2rem;
   margin: auto;
 }
 
