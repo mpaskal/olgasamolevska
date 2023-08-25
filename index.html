@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link rel="stylesheet" href="style.css">
         <script src="script.js" defer></script>
     </head>
@@ -15,52 +16,58 @@
         <div class="navbar" id="topNavbar">
             <div class="navbar-home">
                 <a href="index.html"><img src="assets/images/Olga-main2.jpg" class="logo-img" alt="Olga Samolevskaya"></a>
-                <a href="index.html" class="navbar-title active">Ольга Самолевська</a>
+                <a href="index.html" class="navbar-title active"><h2>Ольга Самолевська</h2></a>
             </div>
-            <ul class="navbar-links">
+            <div class="navbar-links hide">
                 <li><a href="#movie" >Фільми</a></li>
                 <li><a href="poems">Вiршi</a></li>
                 <li><a href="ruspoems">Стихи</a></li>
                 <li><a href="#articles">Статті</a></li>
                 <li><a href="#contacts">Контакти</a></li>
-                <li><a href="javascript:void(0);" class="icon" onclick="navBtnClick()">
-                    <i class="uil uil-bars"></i>
-                </a></li>
-            </ul>
+            </div>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
         <div class="home-page">
-            <section class="home_top">
+            <section class="home-top">
                 <img
-                    class="red_img"
+                    class="red-img"
                     src="assets/images/red.jpg"
                     alt="Red"
                 />
                 <img
-                    class="home_about_img"
+                    class="home-about-img"
                     src="assets/images/Olga_Jan23.jpg"
                     alt="Olga presentation"
                 />
-                <article class="home_about_text_first">
-                  Ця Лисичка з Хрещатику. Сиділа собі у вітрині, аж тут я іду, 5-річна,
-                  з тьотею Аннушкою. І далі без Лисички іти не хочу. Аннушка
-                  перерахувала свої гроші і потягнулася за мною до продавців. А вони
-                  життєрадісно відповіли, що Лисичка не продається, бо працює в
-                  композиції для вітрини. Утираючи мої рясні сльози, Аннушка впросила
-                  продавців відкрити вітрину. Коли ЛИСИЧКА опинилася в моїх нахабних
-                  лапах, Аннушка почула, що просять за неї занадто багато, бо вона вміє
-                  розмовляти. І тоді Аннушка прийняла рішення вигрести з гаманця все. (а
-                  працювала вона у Жовтневому палаці гардеробницею, і я виросла за
-                  лаштунками цього палацу). Лисичка стала кіноактрисою, для цього я
-                  стала кінорежисером. Аннушеньки нема вже 14 років. У день її пам'яті
-                  Лисичку показали на екрані Будинку кіно.
+                <article class="home-about">
+                    <div class="home-about-text-first">
+                        Ця Лисичка з Хрещатику. Сиділа собі у вітрині, аж тут я іду, 5-річна,
+                        з тьотею Аннушкою. І далі без Лисички іти не хочу. Аннушка
+                        перерахувала свої гроші і потягнулася за мною до продавців. А вони
+                        життєрадісно відповіли, що Лисичка не продається, бо працює в
+                        композиції для вітрини. Утираючи мої рясні сльози, Аннушка впросила
+                        продавців відкрити вітрину. Коли ЛИСИЧКА опинилася в моїх нахабних
+                        лапах, Аннушка почула, що просять за неї занадто багато, бо вона вміє
+                        розмовляти. І тоді Аннушка прийняла рішення вигрести з гаманця все. (а
+                        працювала вона у Жовтневому палаці гардеробницею, і я виросла за
+                        лаштунками цього палацу). Лисичка стала кіноактрисою, для цього я
+                        стала кінорежисером. Аннушеньки нема вже 14 років. У день її пам'яті
+                        Лисичку показали на екрані Будинку кіно.
+                    </div>                  
                 </article>
                 <div class="clear"></div>
-              </section>
-              <section class="video_olga-wrap">
-                <div class="video_olga">
-                 
+            </section>
+            <section class="video-olga-wrap">
+                <div class="video-olga">
+                  <video width="300" controls>
+                    <source src="assets/video/Videogreeting_SAMOLEVSKA-NOT_A_TIME_FOR_CHILDREN_.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                  </video>
                 </div>
-              </section>
+            </section>
+    
         </div>
         <footer class="footer">
                 <div class="singleCol social-media-icons-white d-flex justify-content-evenly">
@@ -69,14 +76,14 @@
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                    <i class="uil uil-facebook"></i>
+                    <i class="fa-brands fa-facebook"></i>
                     </a>
                     <a
                         href="https://www.youtube.com/channel/UCdgv1x-RtCYk_M3uOlRH86A"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <i class="uil uil-youtube"></i>
+                    <i class="fa-brands fa-youtube"></i>
                     </a>
                 </div>
                 <small class="copyright"></small> 
