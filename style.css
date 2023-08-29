@@ -56,71 +56,72 @@ a {
 }
 
 /* home page */
-#home {
- 
-}
-
 .home-page {
   position: relative;
   height: 100%;
   width: auto;
 }
 
+
 .home-top {
   position: relative;
-  margin: 1rem 0.5rem;
-}
-
-.home-about {
-  min-height: 27rem;
-  width: auto;
-  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
   color: #a33201;
   background-color: #bbb157;
   box-shadow: 0 -5px 5px 5px rgba(223, 189, 105, 0.934),
               0 5px 5px 5px rgba(223, 189, 105, 0.934);
+  margin: 1rem 0.5rem;
 }
 
-.home-about-text-first {
-  width: 100%;
+.home-about {
+  position: relative;
   text-align: justify;
-  padding: 1rem 10rem 1rem 12rem;
+  max-width: 60%;
   font-size: 1.3rem;
   line-height: 1.6;
+  margin: 1rem 0.5rem;
 }
 
 .home-about-img {
-  float: right;
-  margin-top: 0.8rem;
-  margin-left: 2rem;
-  margin-bottom: 0.5rem;
-  width: auto;
+  position: relative;
   height: 400px;
   box-shadow:  0 -5px 5px 5px rgba(223, 189, 105, 0.934), 
                0 5px 5px 5px rgba(223, 189, 105, 0.934),
                0 2px 5px 10px rgba(0, 0, 0, .6);
+  margin: 1rem 0.5rem;
 }
 
 .red-img {
-  float: left;
-  margin-top: 0.8rem;
-  margin-right: 2rem;
-  margin-bottom: 0.5rem;
-  width: auto;
-  max-height: 400px;  
+  position: relative;
+  height: 400px;  
   box-shadow:  0 -5px 5px 5px rgba(223, 189, 105, 0.934), 
                0 5px 5px 5px rgba(223, 189, 105, 0.934),
                0 2px 5px 10px rgba(0, 0, 0, .6);
+  margin: 1rem 0.5rem;
+}
+
+.home-middle {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  margin: 1rem 0.5rem;
+}
+
+.home-poem {
+  padding-top: 0.3rem;
+  background-color: aqua;
+  width: 35rem;
+  font-size: 1.1rem;
 }
 
 /* -- Video -- */
 .video-olga-wrap {
   position: relative;
-  display: flex;
-  justify-content: center;
   width: 35rem;
   height: auto;
-  margin: 2rem auto;
 }
 
 .video-olga {
@@ -133,10 +134,15 @@ video {
   height: auto;
 }
 
+.home-article {
+  padding-top: 0.3rem;
+  background-color: red;
+  width: 35rem;
+  font-size: 1.1rem;
+}
 
 /* movie page */
 
-/* Movies */
 #movies {
   margin: 3rem 0.5rem 0 0.5rem;
   height: 50px;
@@ -251,6 +257,7 @@ video {
   color: #f4f0e8;
 }
 
+.navbar-title:hover,
 .navbar-title.active {  
   font-size: 1.1rem;
   color: #FFCC66;
@@ -286,10 +293,10 @@ video {
 }
 
 @media (max-width: 992px) { 
-  .home-about-text-first {
-    padding: 1rem;
+  .home-top {
+    justify-content: center;
   }
-
+  
   .hide {
     display: none;
   }
@@ -310,7 +317,7 @@ video {
     top: 5rem;  
     height: auto;
     min-width: 20rem;
-    background: linear-gradient(0deg,#f4f0e8,#ce3f01,#a33201,#a33201,#a33201,#a33201);
+    background: linear-gradient(0deg,#f4f0e8,#ce3f01,#a33201,#a33201,#a33201,#a33201,#a33201);
   }
 
   .navbar-links a {
@@ -320,11 +327,12 @@ video {
     animation: fade-in-from-top 0.5s;
   }
   
-  .navbar-links a:hover {
+  .navbar-links a:hover,
+  .navbar-links a.active {
       justify-content: center;
       display: flex;
       font-size: 1.1rem;
-      color: #bbb157;
+      color: #FFCC66;
       text-decoration: underline;
   }
 
@@ -339,9 +347,8 @@ video {
 }  
 
 @media (max-width: 854px) { 
-  .home-about-text-first {
-    padding: 1rem;
-    clear: both;
+  .home-top {
+    justify-content: center;
   }
 
   .hide {
@@ -364,22 +371,25 @@ video {
     position: fixed;    
     top: 5rem;
     min-width: 12rem;
-    background: linear-gradient(0deg,#f4f0e8,#ce3f01,#a33201,#a33201,#a33201,#a33201);
+    background: linear-gradient(0deg,#f4f0e8,#ce3f01,#a33201,#a33201,#a33201,#a33201,#a33201);
   }
   
   .navbar-links a {
     display: block;
     text-align: center;
     padding: 10px 0;
+    margin-bottom: 1.5rem;
   }
   
-  .navbar-links a:hover {
+  .navbar-links a:hover,
+  .navbar-links a.active {
     font-size: 1.1rem;
-    color: #bbb157;
+    color: #FFCC66;
     text-decoration: underline;
   }
 
   .toggle-btn {
+    font-size: 1rem;
     padding-right: 20px;
     cursor: pointer;
     display: block;
@@ -405,6 +415,7 @@ video {
         #f4f0e8);
   height: 5rem;
   width: auto;
+  bottom: 0;
 }
 
 .singleCol {
