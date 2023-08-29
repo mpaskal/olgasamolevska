@@ -225,20 +225,11 @@ video {
   z-index: 10;
 }
 
-.navbar a:hover {
-  background-color: #db6c3c;
-  border-radius: 5px;
-  border-bottom: 0.2rem solid transparent;
-  border-color: #f4f0e8;
-}
-
+.navbar-links a:hover,
 .navbar-links a.active {
-  display: flex;
-  justify-content: center;
-  background-color: #db6c3c;    
-  border-radius: 5px;
-  border-bottom: 0.2rem solid transparent;
-  border-color: #f4f0e8;
+  font-size: 1.1rem;
+  color: #FFCC66;
+  text-decoration: underline;
 }
 
 .navbar-home {
@@ -249,28 +240,21 @@ video {
   float: left;
 }
 
-.navbar-links a {
-
-}
-
 .logo-img { 
   height: 4rem;
   border-radius: 50%;
   margin: 0.5rem 1rem 0 3rem;
-  animation: fade-in-from-top 0.5s;
 }
 
 .navbar-title,
 .navbar-title.a {
   color: #f4f0e8;
-  animation: fade-in-from-top 0.5s;
 }
 
-.navbar-title.active {
-  background-color: #db6c3c;    
-  border-radius: 5px;
-  border-bottom: 0.2rem solid transparent;
-  border-color: #f4f0e8;
+.navbar-title.active {  
+  font-size: 1.1rem;
+  color: #FFCC66;
+  text-decoration: underline;
 }
 
 .navbar-links {
@@ -284,12 +268,12 @@ video {
   #a33201,
   #ce3f01,
   #f4f0e8);
-  animation: fade-in-from-top 0.5s;
 }
 
 .navbar-links a {
   display: inline-block;
   padding: 15px 20px;
+  animation: none;
 } 
 
 .navbar-links li {
@@ -337,10 +321,11 @@ video {
   }
   
   .navbar-links a:hover {
-      background-color: #db6c3c;
       justify-content: center;
       display: flex;
-      border-radius: 5px;
+      font-size: 1.1rem;
+      color: #bbb157;
+      text-decoration: underline;
   }
 
   .toggle-btn {
@@ -389,7 +374,9 @@ video {
   }
   
   .navbar-links a:hover {
-    background-color: lightcoral;
+    font-size: 1.1rem;
+    color: #bbb157;
+    text-decoration: underline;
   }
 
   .toggle-btn {
@@ -398,8 +385,6 @@ video {
     display: block;
     margin-bottom: 10px;
     color: #f4f0e8;
-    animation: fade-in-from-top 0.5s;
-
   }
 }  
 
