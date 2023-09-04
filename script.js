@@ -29,12 +29,20 @@ function todayDate() {
   return date;
 }
 
+function setPoems() {
+  let poemsSet = [];
+}
+
 function renderBoard() {
   let dateCopyright = todayDate();
   document.querySelector(
     ".copyright"
   ).innerHTML = `Copyright &copy; ${dateCopyright} LivenLab`;
+
+  //setPoems();
 }
+
+
 
 // executed with loading
 (function () {
