@@ -173,6 +173,40 @@ body {
   margin: 1rem 0.5rem 1rem 1rem;
 }
 
+.home-photos {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 3rem;
+  padding: 1rem 0;
+  color: #a33201;
+  background-color: #bbb157;
+  width: 43rem;
+  box-shadow:  0 -5px 5px 5px rgba(223, 189, 105, 0.934), 
+               0 5px 5px 5px rgba(223, 189, 105, 0.934),
+               0 2px 5px 10px rgba(0, 0, 0, .6);
+}
+
+.home-photos a {
+  text-decoration: none;
+  color: #a33201;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.home-photos a:hover,
+.home-photos a.active {
+    font-size: 1.3rem;
+    color: #8d2a00;
+    text-decoration: underline;
+}
+
+.home-photo-img {
+  width: 43rem;
+  box-shadow:  0 -5px 5px 5px rgba(223, 189, 105, 0.934), 
+               0 5px 5px 5px rgba(223, 189, 105, 0.934),
+               0 2px 5px 10px rgba(0, 0, 0, .6);
+}
+
 .red-img {
   position: relative;
   height: 400px;  
@@ -186,8 +220,9 @@ body {
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   justify-content:space-around;
-  margin: 1rem 0.5rem;
+  margin: 1rem 0.3rem;
 }
 
 .home-article {
@@ -315,8 +350,8 @@ body {
 
 .home-video-olga-wrap {
   position: relative;
-  margin: 1rem 0.5rem 1rem 0.5rem;
-  width: 46rem;
+  margin: 1rem 0;
+  width: 43rem;
   height: auto;
 }
 
@@ -338,7 +373,7 @@ body {
   padding: 1rem 0 1.5rem 0;
   color: #a33201;
   background-color: #bbb157;
-  width: 46rem;
+  width: 43rem;
   box-shadow:  0 -5px 5px 5px rgba(223, 189, 105, 0.934), 
                0 5px 5px 5px rgba(223, 189, 105, 0.934),
                0 2px 5px 10px rgba(0, 0, 0, .6);
@@ -433,6 +468,52 @@ video {
   flex: 1;
   list-style: none;
   text-align: start;
+}
+
+/*poems page*/
+.poems {
+  position: relative;
+  min-height: 100vh;
+  margin: 0 1rem 3.5rem 0;
+  width: auto;
+}
+
+.poem-section {
+  margin-bottom: 2rem;  
+}
+
+.card-poems {
+  position: relative;
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: center;
+  padding-top: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.card-poem {
+  width: 40%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -3em 3em inset, rgb(255, 255, 255) 0px 0px 0px 2px, rgba(0, 0, 0, 0.3) 0.3em 0.3em 1em;
+}
+
+.poems-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 3rem;
+  padding-top: 1rem;
+  margin: 0.1rem;
+  background-color: rgb(224, 201, 166);
+  border-top-left-radius: 10px 10px;
+  border-top-right-radius: 10px 10px;
+}
+
+.card-poem-text {
+  padding: 2rem 0;
+  line-height: 1.6;
+  margin: 0 0.2rem 0.2rem 0.2rem;
+  background-color: #f4f0e8;
 }
 
 @media (max-width: 992px) { 
