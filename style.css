@@ -682,7 +682,7 @@ video {
 }  
 
 @media (max-width: 500px) { 
-  
+
   html, body {width: auto!important; overflow-x: hidden!important} 
 
   .home-top {
@@ -733,7 +733,7 @@ video {
 
   .navbar-title:hover,
   .navbar-title.active {  
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #FFCC66;
     text-decoration: underline;
     padding-top: 1.3rem;
@@ -750,6 +750,16 @@ video {
 
   .home-about {
     width: 80%;
+  }
+
+  .home-about-img {
+    height: 25rem;
+    width: auto;
+  }
+
+  .home-red-img {
+    height: 40rem;
+    width: auto;
   }
 
   .card-poem {
