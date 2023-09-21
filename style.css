@@ -441,7 +441,7 @@ video {
 .movie {
   height: 282px;
   margin-right: 0.7rem;
-  min-height: 315px;
+  height: 315px;
   box-shadow: 0 -5px 5px 5px rgba(223, 189, 105, 0.934),
       0 5px 5px 5px rgba(223, 189, 105, 0.934);
 }
