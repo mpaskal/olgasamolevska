@@ -169,6 +169,7 @@ function setSections() {
       card.setAttribute("class", "article-card");
       card.setAttribute("id", cardIndex);
       document.querySelector(`#${CSS.escape(divSubArtIndex)}`).appendChild(card);
+
       let titleLink = document.createElement("a");
       let indexTitleLink = cardIndex + 200;
       console.log("cardIndex2 ", cardIndex);
@@ -181,16 +182,22 @@ function setSections() {
       let createText = document.createTextNode(yearArticle.title);
       document.querySelector(`#${CSS.escape(indexTitleLink)}`).appendChild(createText);
 
+      let cardBody = document.createElement("div");
+      let indexCardBody = cardIndex + 500;
+      cardBody.setAttribute("class", "article-card-body");
+      cardBody.setAttribute("id", indexCardBody);
+      document.querySelector(`#${CSS.escape(cardIndex)}`).appendChild(cardBody);
+
       let cardImg = document.createElement("img");
       cardImg.setAttribute("class", "article-img");
       cardImg.setAttribute("src", yearArticle.image);
-      document.querySelector(`#${CSS.escape(cardIndex)}`).appendChild(cardImg);
+      document.querySelector(`#${CSS.escape(indexCardBody)}`).appendChild(cardImg);
 
       let cardText = document.createElement("div");
       let cardTextIndex = cardIndex + 2000;
       cardText.setAttribute("class", "article-card-text");
       cardText.setAttribute("id", cardTextIndex); 
-      document.querySelector(`#${CSS.escape(cardIndex)}`).appendChild(cardText);
+      document.querySelector(`#${CSS.escape(indexCardBody)}`).appendChild(cardText);
       document.querySelector(`#${CSS.escape(cardTextIndex)}`).innerHTML = yearArticle.description;
 
      }) 

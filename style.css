@@ -561,6 +561,8 @@ video {
 .articles-year {
   color: #a33201;
   background-color: #bbb157;
+  margin: 0;
+  padding-bottom: 0.5rem;
   box-shadow: 0 -5px 5px 5px rgba(223, 189, 105, 0.934),
     0 5px 5px 5px rgba(223, 189, 105, 0.934);
   border-radius: 5px;
@@ -592,16 +594,18 @@ video {
   padding-top: 0.3rem;
   border: 1px solid rgba(0,0,0,0.175);
   border-radius: 0.375rem;
-  background-color: rgba(248,249,250);
+  background-color: #f4f0e8;
   box-shadow: rgba(0, 0, 0, 0.1) 0px -3em 3em inset, rgb(255, 255, 255) 0px 0px 0px 2px, rgba(0, 0, 0, 0.3) 0.3em 0.3em 1em;
 }
 
 .article-card-body {
-  background-color: #f4f0e8;
+  background-color: #f4f0e8;;
+  padding: 1rem;
 }
 
 .article-card-text {
   color: #a33201;
+  font-size: 1.1rem;
 }
 
 .article-title {
@@ -626,9 +630,10 @@ video {
 }
 
 .article-img {
-  width: 120px;
+  width: 100%;
   margin-bottom: 1.5rem;
   object-fit: cover;
+  border-radius: calc(0.375rem - (1px)) calc(0.375rem - (1px));
   box-shadow: 0 -5px 5px 5px rgba(223, 189, 105, 0.934),
     0 5px 5px 5px rgba(223, 189, 105, 0.934);
 }
