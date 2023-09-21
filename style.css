@@ -446,8 +446,9 @@ video {
 }
 
 .movie-title {
+  padding-top: 1rem;
   margin: 1rem 0.5rem 0 0.5rem;
-  height: 50px;
+  height: 3rem;
   color: #a33201;
   background-color: #bbb157;
   box-shadow: 0 -5px 5px 5px rgba(223, 189, 105, 0.934),
