@@ -138,21 +138,25 @@ function findArticlesWithSameYear(articles, year) {
 
 function setSections() {
   let years = getYears();
-  console.log(years);
 
+  // create a section
   let sectionArticle = document.createElement("section");
   sectionArticle.setAttribute("class", "article-section");
   document.querySelector(".articles").appendChild(sectionArticle);
+
+  // create subsections by years
   years.map((publishedYear, index) => {
     let divSection = document.createElement("div");
     divSection.setAttribute("class", "article-year-section");
     divSection.setAttribute("id", index);
     document.querySelector(".article-section").appendChild(divSection);
+
     let h2Art = document.createElement("h2");
     let h2ArtIndex = index + 10;
     h2Art.setAttribute("class", "articles-year");
     h2Art.setAttribute("id", h2ArtIndex);
     document.querySelector(`#${CSS.escape(index)}`).appendChild(h2Art);
+
     let divSubArt = document.createElement("div");
     let divSubArtIndex = index + 1000;
     divSubArt.setAttribute("class", "article-by-year"); 
@@ -161,43 +165,50 @@ function setSections() {
     document.querySelector(`#${CSS.escape(index)}`).appendChild(divSubArt);
     let yearArticles = findArticlesWithSameYear(articles, publishedYear);
     console.log("year articles ", yearArticles);
+
+    // create cards with articles
     yearArticles.map((yearArticle, index) => {
-      console.log("yearArticle ", yearArticle);
       let card = document.createElement("div");
       let cardIndex = Math.random() * 100;
-      console.log("cardIndex ", cardIndex);
       card.setAttribute("class", "article-card");
       card.setAttribute("id", cardIndex);
       document.querySelector(`#${CSS.escape(divSubArtIndex)}`).appendChild(card);
 
       let titleLink = document.createElement("a");
-      let indexTitleLink = cardIndex + 200;
-      console.log("cardIndex2 ", cardIndex);
+      let titleLinkIndex = cardIndex + 300;
       titleLink.setAttribute("class", "article-title");
       titleLink.setAttribute("href", yearArticle.url);
       titleLink.setAttribute("target", "_blank");
-      titleLink.setAttribute("id", indexTitleLink);   
+      titleLink.setAttribute("id", titleLinkIndex);   
       document.querySelector(`#${CSS.escape(cardIndex)}`).appendChild(titleLink);
-      console.log("title ", indexTitleLink);
+
       let createText = document.createTextNode(yearArticle.title);
-      document.querySelector(`#${CSS.escape(indexTitleLink)}`).appendChild(createText);
+      document.querySelector(`#${CSS.escape(titleLinkIndex)}`).appendChild(createText);
 
       let cardBody = document.createElement("div");
-      let indexCardBody = cardIndex + 500;
+      let cardBodyIndex = cardIndex + 500;
       cardBody.setAttribute("class", "article-card-body");
-      cardBody.setAttribute("id", indexCardBody);
+      cardBody.setAttribute("id", cardBodyIndex);
       document.querySelector(`#${CSS.escape(cardIndex)}`).appendChild(cardBody);
+
+      let imgLink = document.createElement("a");
+      let imgLinkIndex = cardIndex + 700;
+      imgLink.setAttribute("class", "article-title-link");
+      imgLink.setAttribute("href", yearArticle.url);
+      imgLink.setAttribute("target", "_blank");
+      imgLink.setAttribute("id", imgLinkIndex);   
+      document.querySelector(`#${CSS.escape(cardBodyIndex)}`).appendChild(imgLink);
 
       let cardImg = document.createElement("img");
       cardImg.setAttribute("class", "article-img");
       cardImg.setAttribute("src", yearArticle.image);
-      document.querySelector(`#${CSS.escape(indexCardBody)}`).appendChild(cardImg);
+      document.querySelector(`#${CSS.escape(imgLinkIndex)}`).appendChild(cardImg);
 
       let cardText = document.createElement("div");
       let cardTextIndex = cardIndex + 2000;
       cardText.setAttribute("class", "article-card-text");
       cardText.setAttribute("id", cardTextIndex); 
-      document.querySelector(`#${CSS.escape(indexCardBody)}`).appendChild(cardText);
+      document.querySelector(`#${CSS.escape(cardBodyIndex)}`).appendChild(cardText);
       document.querySelector(`#${CSS.escape(cardTextIndex)}`).innerHTML = yearArticle.description;
 
      }) 
