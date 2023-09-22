@@ -163,7 +163,7 @@ function setSections() {
     });
   }
 
-  // executed with loading
+// executed with loading
 (function () {
     setSections();
   })();
