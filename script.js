@@ -1,109 +1,3 @@
-const articles = [
-    {
-      "title": "Святе місце Миколи Макаренка",
-      "name": "Макаренка",
-      "id": "makarenka",
-      "path": "#makarenka",
-      "year": "2019",
-      "date": "20 грудня, 2019",
-      "image": "assets/images/makarenka.jpg",
-      "description": "Микола Макаренко – людина, яка зуміла врятувати від знищення більшовицькою Ордою Софію Київську.",
-      "url": "https://zn.ua/ukr/HISTORY/svyate-misce-mikoli-makarenka-333577_.html",
-      "poemsLink": "sidebar_link"
-    },
-    {
-      "title": "Мовчання Зони",
-      "name": "Мовчання",
-      "id": "movchanya",
-      "path": "#movchanya",
-      "year": "2019",
-      "date": "26 квiтня, 2019",
-      "image": "assets/images/movchanya.jpg",
-      "description": "До 33-х роковин Чорнобильської трагедії.",
-      "url": "https://zn.ua/ukr/personalities/movchannya-zoni-309676_.html",
-      "poemsLink": "sidebar_link"
-    },
-    {
-      "title": "Один у полі воїн — один у небі Бог",
-      "name": "Oдин",
-      "id": "odin",
-      "path": "#odin",
-      "year": "2018",
-      "date": "20 грудня 2018",
-      "image": "assets/images/odin.jpg",
-      "description": "Набат Михайлівського монастиря лунав над Києвом 1240 року під час ординської навали.",
-      "url": "https://zn.ua/ukr/HISTORY/odin-u-poli-voyin-odin-u-nebi-bog-297561_.html",
-      "poemsLink": "sidebar_link",
-    },
-    {
-      "title": "Той Горбачов, що горнєє вбачає",
-      "name": "Горбачов",
-      "id": "gorbachov",
-      "path": "#gorbachov",
-      "year": "2017",
-      "date": "20 жовтня 2017",
-      "image": "assets/images/gorbachov.jpg",
-      "description": "Дмитро Горбачов ввів у міжнародний обіг поняття'український авангард','українська сецесія'.",
-      "url": "https://zn.ua/ukr/personalities/toy-gorbachov-scho-gornyeye-vbachaye-257573_.html",
-      "poemsLink": "sidebar_link",
-    },
-    {
-      "title": "Алеї нашої пам'яті",
-      "name": "Алеї",
-      "id": "alei",
-      "path": "#alei",
-      "year": "2017",
-      "date": "11 серпня 2017",
-      "image": "assets/images/alei.jpg",
-      "description": "У яку ж прірву ми скотилися, коли духовна еліта України знищувалася разом із пам'яттю про неї!",
-      "url": "https://zn.ua/ukr/personalities/aleyi-nashoyi-pam-yati-250964_.html",
-      "poemsLink": "sidebar_link",
-    },
-    {
-      "title": "Важка дорога з України в Україну",
-      "name": "Важка",
-      "id": "vazka",
-      "path": "#vazka",
-      "year": "2015",
-      "date": "13 листопада 2015",
-      "image": "assets/images/vazka.jpg",
-      "description": "Живе серед нас дивовижна жінка - Оксана Миколаївна Хращевська. Вона не зрадила ні Україну, ні ближніх, за що пройшла сталінські табори й заслання. Нещодавно їй виповнилося 90 років.",
-      "url": "https://zn.ua/ukr/personalities/vazhka-doroga-z-ukrayini-v-ukrayinu-_.html",
-      "poemsLink": "sidebar_link",
-    },
-    {
-      "title": "Феномен Теофіла Яновського",
-      "name": "Феномен",
-      "id": "phenomen",
-      "path": "#phenomen",
-      "year": "2013",
-      "date": "30 серпня 2013",
-      "image": "assets/images/phenomen.jpg",
-      "description": "Хтось вважав, що може вдосконалити світ насильством - Теофіл Яновський щоденно вдосконалював світ милосердям і напруженням інтелекту.",
-      "url": "https://zn.ua/ukr/personalities/fenomen-teofila-yanovskogo-_.html",
-      "poemsLink": "sidebar_link"
-    }
-  ]
-
-
-// let toggleBtn = document.querySelector(".toggle-btn");
-// let toggleBtnIcon = document.querySelector(".toggle-btn i");
-// let dropDownMenu = document.querySelector(".navbar-links-bars");
-
-// console.log("toggleBtn ", toggleBtn);
-// console.log("toggleBtnIcon", toggleBtnIcon);
-// console.log("dropDownMenu", dropDownMenu);
-
-// function navBtnClick() {
-//  // dropDownMenu.classList.replace("navbar-links","navbar-links-bars");
-//   dropDownMenu.classList.toggle('open');
-//   console.log("dropDownMenu1", dropDownMenu);
-//   const isOpen = dropDownMenu.classList.contains('open');
-//   console.log("isOpen ", isOpen);
-//   //isOpen ? dropDownMenu.classList.replace("navbar-links","navbar-links-bars") : dropDownMenu.classList.replace("navbar-links-bars","navbar-links");
-//   isOpen ? dropDownMenu.style.visibility = "visible" : dropDownMenu.style.visibility = "hidden";
-// }
-
 const hamburger = document.querySelector('.toggle-btn');
 const navLink = document.querySelector('.navbar-links');
 
@@ -215,8 +109,6 @@ function setSections() {
   });
 }
 
-
-
 function setArticles() {
   setSections();
 //   articles.forEach(article => {
@@ -225,20 +117,41 @@ function setArticles() {
 
  }
 
+ // contacts
+// const SERVICE_ID = "service_a730kxo";
+// const TEMPLATE_ID = "template_x8gn677";
+
+//   function submitMessage() {
+//     const PUBLIC_KEY = "R65UY0wRBH2tmKunK";
+//      // https://dashboard.emailjs.com/admin/account
+//      (function() {
+//       emailjs.init('PUBLIC_KEY');
+//   })();
+//     document.getElementById('contact-form').addEventListener('submit', function(event) {
+//       event.preventDefault();
+//       // generate a five digit number for the contact_number variable
+//       this.contact_number.value = Math.random() * 100000 | 0;
+//       // these IDs from the previous steps
+//       emailjs.sendForm('SERVICE_ID', 'TEMPLATE_ID', this)
+//           .then(function() {
+//             console.log('SUCCESS!');
+//           }, function(error) {
+//             console.log('FAILED...', error);
+//           });
+//     });
+// }
+
 function renderBoard() {
   let dateCopyright = todayDate();
   document.querySelector(
     ".copyright"
   ).innerHTML = `Copyright &copy; ${dateCopyright} LivenLab`;
 
-  setArticles();
+ // setArticles();
   //setPoems();
 }
-
-
 
 // executed with loading
 (function () {
   renderBoard();
-  console.log("Page is here");
 })();
