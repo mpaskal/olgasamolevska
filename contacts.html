@@ -34,19 +34,30 @@
         </header>
         <div class="contacts">
           <div class="contact">
-            <h1>Будь ласка, зв'яжіться з нами електронною поштою:</h1>
+            <h2>Будь ласка, зв'яжіться з нами електронною поштою:</h2>
             <div class="contact-form-frame">
                 <form id="contact-form">
                     <input type="hidden" name="contact_number">
-                    <label>Name</label>
-                    <input type="text" name="from_name" required>
-                    <label>Email</label>
-                    <input type="email" name="from_email" required> 
-                    <label>Subject</label>
-                    <input type="text" name="subject">
-                    <label>Message</label>
-                    <textarea name="message"></textarea>
-                    <input type="submit" value="Send">
+                    <label for="from_name" class="contact-label">Ім'я:</label>
+                    <div class="input-container">                        
+                        <i class="fa-solid fa-user"></i>
+                        <input class="contact-filed" type="text" name="from_name" placeholder="Ім'я" required>
+                    </div>
+                    <label for="from_email" class="contact-label">Електронна пошта:</label>
+                    <div class="input-container">  
+                        <i class="fa-solid fa-envelope"></i>
+                        <input class="contact-filed" type="email" name="from_email" placeholder="Електронна пошта" required> 
+                    </div>
+                    <label for="subject" class="contact-label">Тема</label>
+                    <div class="input-container">
+                        <i class="fa-solid fa-pen-nib"></i> 
+                        <input class="contact-filed" type="text" name="subject" placeholder="Тема">
+                    </div>
+                    <label for="message" class="contact-label">Повідомлення:</label>
+                    <div class="input-container"> 
+                        <textarea class="contact-filed-message" name="message" required placeholder="Повідомлення"></textarea>
+                    </div>
+                    <input class="contact-btn" type="submit" value="Надіслати">
                 </form>
             </div>
           </div>           
