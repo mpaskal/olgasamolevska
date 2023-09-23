@@ -5,6 +5,11 @@ hamburger.addEventListener('click', () => {
   navLink.classList.toggle('hide');
 });
 
+// clean form
+function cleanForm() {
+  document.querySelectorAll(".contact-field").innerHTML = "";
+}
+
 // copyright
 function todayDate() {
   let date = new Date().getFullYear();

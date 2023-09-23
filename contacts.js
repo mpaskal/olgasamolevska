@@ -14,8 +14,18 @@ const PUBLIC_KEY = "R65UY0wRBH2tmKunK";
         emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, this)
             .then(function() {
                 console.log('SUCCESS!');
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Повідомлення успішно надіслано'
+                  })
             }, function(error) {
                 console.log('FAILED...', error);
-            });
-    });
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Ой, щось пішло не так',
+                    text: error.text,
+                  })
+                });
+            event.target.reset()
+            });     
 })();
