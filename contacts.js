@@ -16,13 +16,17 @@ const PUBLIC_KEY = "R65UY0wRBH2tmKunK";
                 console.log('SUCCESS!');
                 Swal.fire({
                     icon: 'success',
-                    title: 'Повідомлення успішно надіслано'
+                    title: 'Повідомлення успішно надіслано',
+                    confirmButtonColor: '#a33201',
+                    confirmButtonText: 'Ok'
                   })
             }, function(error) {
                 console.log('FAILED...', error);
                 Swal.fire({
                     icon: 'error',
                     title: 'Ой, щось пішло не так',
+                    confirmButtonColor: '#a33201',
+                    confirmButtonText: 'Ok',
                     text: error.text,
                   })
                 });
