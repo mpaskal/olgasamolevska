@@ -23,13 +23,18 @@
   }
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 html {
   overflow: auto;
   scroll-behavior: smooth;
 }
 
 body {  
-  position: relative;
   text-align: center;
   background-image: url("assets/images/apples-on-ground.jpg");
   background-size: cover;
@@ -485,23 +490,40 @@ video {
 }
 
 /*poems page*/
+.page-with-navbar {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .poems {
   position: relative;
   min-height: 100vh;
   margin: 0 1rem 3.5rem 0;
-  width: auto;
+  width: 80vw;
 }
 
-.poem-section {
+.poems-section {
   margin-bottom: 2rem;  
 }
 
 .card-poems {
   position: relative;
   display: flex;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
   justify-content: center;
   padding-top: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.card-poems-move {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  margin-bottom: -3rem;
   font-size: 1.1rem;
 }
 
@@ -512,6 +534,10 @@ video {
   box-shadow: rgba(0, 0, 0, 0.1) 0px -3em 3em inset, rgb(255, 255, 255) 0px 0px 0px 2px, rgba(0, 0, 0, 0.3) 0.3em 0.3em 1em;
 }
 
+.cards-interrior-link {
+  margin-top: 5.5rem;
+}
+
 .poems-title {
   display: flex;
   color: #7d2600;
@@ -520,7 +546,6 @@ video {
   font-size: 2rem;
   font-weight: 600;
   height: 3rem;
-  padding-top: 1rem;
   background-color: rgb(224, 201, 166);
   border-top-left-radius: 10px 10px;
   border-top-right-radius: 10px 10px;
@@ -541,6 +566,135 @@ video {
   min-height: 100vh;
   margin: 0 1rem 3.5rem 0;
   width: auto;
+}
+
+/* -- Sidebar -- */
+.poems-list-title {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  color: #f4f0e8;
+  width: 236px;
+  height: 50px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  z-index: 10;
+  background: linear-gradient(90deg,
+        #a33201,
+        #a33201,
+        #a33201,
+        #ce3f01,
+        #E0C9A6)
+}
+
+.poems-list {
+  display: flex;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  margin-top: 60px;
+  height: 70vh;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: linear-gradient(90deg, 
+        #a33201,
+        #a33201,
+        #ce3f01,
+        #E0C9A6)
+}
+
+section.sidebar-links {
+  padding-top: 0;
+  animation: fade-in-from-left 0.5s;
+}
+
+ .sidebar-links {
+  position: fixed;
+  text-align: left;
+  margin: 0 0 -80px 0;
+  top: 4.8rem;
+  left: 0;
+  width: 270px;
+  min-height: 70vh;
+  color: #f4f0e8;
+  font-size: 1.2rem;
+  padding: 1rem 0 0 1rem;
+  transition: transform .5s;
+  z-index: 5;
+  background: linear-gradient(90deg,
+         #a33201,
+         #a33201,
+         #ce3f01,
+         #E0C9A6)
+}
+
+ .sidebar-btn {
+    position: fixed;
+   top: 4.8rem;
+   left: 242px;
+   width: 28px;
+   height: 50px;
+   padding-top: 10px;
+   font-size: 1.6rem;
+   justify-content: center;
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+   outline: none;
+   border: none;
+   cursor: pointer;
+   color: #a33201 !important;
+   transition: transform .5s;
+   animation: fade-in-from-left 0.5s;
+   z-index: 5;
+   background: linear-gradient(90deg,
+        #E0C9A6,
+        #E0C9A6)
+ }
+
+ .sidebar-btn-move {
+   transform: translateX(-242px);
+   position: fixed;
+   display: flex;
+   align-items: center;
+   width: 40px;
+   height: 50px;
+   padding-top: 0;
+   transition: transform .5s;
+   z-index: 2;
+ }
+
+.sidebar-links-move {
+  transform: translateX(-100%);
+}
+
+.sidebar-link { 
+  text-decoration: none;
+  outline: none;
+  padding-left: 5px;
+  padding: 10px 5px 5px 5px;
+  color: #f4f0e8 !important;
+  transition: all 0.2s;
+}
+
+.sidebar-link:hover {
+  display: flex;
+  border-radius: 5px; 
+  padding: 10px 5px 5px 5px;
+  width: 90%;
+  font-size: 1.3rem;
+  transform: scale(1.00);
+  color: #a33201 !important;
+  background-color: #E0C9A6 !important;
+}
+
+.sidebar-link:focus {
+  display: flex;
+  border-radius: 5px;
+  font-weight: 600;     
+  font-size: 1.3rem;
+  color: #a33201 !important;
+  background-color: #E0C9A6 !important;
 }
 
 /*contacts page*/

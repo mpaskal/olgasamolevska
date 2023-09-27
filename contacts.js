@@ -2,6 +2,8 @@ const SERVICE_ID = "service_a730kxo";
 const TEMPLATE_ID = "template_x8gn677";
 const PUBLIC_KEY = "R65UY0wRBH2tmKunK";
 
+//const PUBLIC_KEY = "4RdMwlH1udcnsd3vP"; //Olga
+
 // executed with loading
 (function() {
     // https://dashboard.emailjs.com/admin/account   
