@@ -31,8 +31,27 @@
             </div>
         </header>
         <div class="ruspoems">
+            <section class="sidebar-links">
+                <div class="poems-list-title">Содержание</div>
+                <div class="poems-list">
+                    <a class="sidebar-link" href="#schoolgirl" onclick="poemPageMove()">Школьница</a>
+                    <a class="sidebar-link" href="#landscape" onclick="poemPageMove()">Такой пейзаж</a>
+                    <a class="sidebar-link" href="#ikar" onclick="poemPageMove()">Падение Икара</a>
+                    <a class="sidebar-link" href="#boundless" onclick="poemPageMove()">О, безбрежная беспутная Россия!</a>
+                    <a class="sidebar-link" href="#suddenly" onclick="poemPageMove()">Вдруг остановишься средь суетливого города</a>
+                    <a class="sidebar-link" href="#washed" onclick="poemPageMove()">Умытый маем мир</a>
+                    <a class="sidebar-link" href="#mid" onclick="poemPageMove()">Средь города</a>
+                    <a class="sidebar-link" href="#walked" onclick="poemPageMove()">Шла по линии прибоя</a>
+                    <a class="sidebar-link" href="#holdingon" onclick="poemPageMove()">Держится кружение Земли</a>
+                    <a class="sidebar-link" href="#girl" onclick="poemPageMove()">Девочка на шаре</a>
+                    <a class="sidebar-link" href="#russian" onclick="poemPageMove()">О, русский, верь: зайдет она</a>
+                </div>                    
+            </section>
+            <section class="sidebar-btn">
+                <i class="fa-solid fa-angle-right btn-icon" onClick="moveSidebar()"></i>
+            </section>
             <section class="poem-section">
-                <div class="card-poems">
+                <div class="card-poems card" id="schoolgirl">
                     <div class="card-poem">
                         <div class="poems-title">Школьница</div>
                         <div class="card-poem-text">
@@ -62,7 +81,7 @@
                         </div>                        
                     </div>                  
                 </div>   
-                <div class="card-poems">
+                <div class="card-poems cards" id="landscape">
                     <div class="card-poem">
                         <div class="poems-title">Такой пейзаж</div>
                         <div class="card-poem-text">
@@ -111,7 +130,7 @@
                         </div>                        
                     </div>                  
                 </div>        
-                <div class="card-poems">
+                <div class="card-poems cards" id="ikar">
                     <div class="card-poem">
                         <div class="poems-title">Падение Икара</div>
                         <div class="card-poem-text">
@@ -149,7 +168,7 @@
                     </div>                  
                 </div>        
 
-                <div class="card-poems">
+                <div class="card-poems cards" id="boundless">
                     <div class="card-poem">
                         <div class="poems-title">O, безбрежная беспутная Россия!</div>
                         <div class="card-poem-text">
@@ -171,7 +190,7 @@
                         </div>                        
                     </div>                  
                 </div>        
-                <div class="card-poems">
+                <div class="card-poems cards" id="suddenly">
                     <div class="card-poem">
                         <div class="poems-title">Вдруг остановишься средь суетливого города</div>
                         <div class="card-poem-text">
@@ -185,7 +204,7 @@
                         </div>                        
                     </div>                  
                 </div>        
-                <div class="card-poems">
+                <div class="card-poems cards" id="washed">
                     <div class="card-poem">
                         <div class="poems-title">Умытый маем мир</div>
                         <div class="card-poem-text">
@@ -218,7 +237,7 @@
                         </div>                        
                     </div>                  
                 </div>        
-                <div class="card-poems">
+                <div class="card-poems cards" id="mid">
                     <div class="card-poem">
                         <div class="poems-title">Средь города</div>
                         <div class="card-poem-text">
@@ -242,7 +261,7 @@
                         </div>                        
                     </div>                  
                 </div>        
-                <div class="card-poems">
+                <div class="card-poems cards" id="walked">
                     <div class="card-poem">
                         <div class="poems-title">Шла по линии прибоя</div>
                         <div class="card-poem-text">
@@ -266,7 +285,7 @@
                         </div>                        
                     </div>                  
                 </div>        
-                <div class="card-poems">
+                <div class="card-poems cards" id="holdingon">
                     <div class="card-poem">
                         <div class="poems-title">Держится кружение Земли</div>
                         <div class="card-poem-text">
@@ -290,7 +309,7 @@
                         </div>                        
                     </div>                  
                 </div>        
-                <div class="card-poems">
+                <div class="card-poems cards" id="girl">
                     <div class="card-poem">
                         <div class="poems-title">Девочка на шаре</div>
                         <div class="card-poem-text">
@@ -312,7 +331,7 @@
                         </div>                        
                     </div>                  
                 </div>        
-                <div class="card-poems">
+                <div class="card-poems cards" id="russian">
                     <div class="card-poem">
                         <div class="poems-title">О, русский, верь: зайдёт она</div>
                         <div class="card-poem-text">
