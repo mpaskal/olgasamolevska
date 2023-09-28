@@ -759,9 +759,10 @@ form {
   margin: 0.5rem auto;
 }
 
-.contact-filed {
+.contact-field {
   height: 2rem;
   width: 70%;
+  padding-left: 0.8rem;
   margin-bottom: 0.5rem;
   border: 1px solid lightgray;
   outline: none;
@@ -770,7 +771,7 @@ form {
            inset 10px 10px 15px rgba(70, 70, 70, 0.12);
 }
 
-.contact-filed:hover {
+.contact-field:hover {
   box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
 }
 
@@ -779,14 +780,16 @@ form {
   background-color: rgb(245, 227, 220);
 }
 
-.contact-filed-message {
+.contact-field-message {
   height: 10rem;
   width: 70%;
+  padding-left: 0.8rem;
+  padding-top: 0.8rem;
   border: 1px solid lightgray;
   border-radius: 0.375rem;
 }
 
-.contact-filed-message:hover {
+.contact-field-message:hover {
   box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
 }
 
