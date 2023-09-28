@@ -1,6 +1,6 @@
-const SERVICE_ID = "service_a730kxo";
-const TEMPLATE_ID = "template_x8gn677";
-const PUBLIC_KEY = "R65UY0wRBH2tmKunK";
+const SERVICE_ID = "service_c3o877o";
+const TEMPLATE_ID = "template_442y8ba";
+const PUBLIC_KEY = "4RdMwlH1udcnsd3vP";
 
 //const PUBLIC_KEY = "4RdMwlH1udcnsd3vP"; //Olga
 
