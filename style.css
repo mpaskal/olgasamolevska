@@ -165,6 +165,13 @@ h1, h2, h3, h4, h5 {
   width: auto;
 }
 
+.home-mid-left {
+  height: auto;
+  margin: 1rem 0;
+    position: relative;
+    width: 43rem;
+}
+
 .home-article {
   background-color: #bbb157;
   box-shadow: 0 -5px 5px 5px rgba(223, 189, 105, .934),
@@ -240,11 +247,35 @@ h1, h2, h3, h4, h5 {
   position: relative;
 }
 
-.home-middle {
+.home-new-movie {
+  background-color: #bbb157;
+  box-shadow: 0 -5px 5px 5px rgba(223, 189, 105, .934),
+    0 5px 5px 5px rgba(223, 189, 105, .934),
+    0 2px 5px 10px rgba(0, 0, 0, .6);
+  margin: 1.5rem;
+  position: relative;
+  width: 560px;
+}
+
+.home-new-movie-title {
+  color: #7d2600;
+  font-size: 1.3rem;
+  font-weight: bold;
+    background-color: #bbb157;
+      box-shadow: 0 -5px 5px 5px rgba(223, 189, 105, .934),
+        0 5px 5px 5px rgba(223, 189, 105, .934),
+        0 2px 5px 10px rgba(0, 0, 0, .6);
+      color: #7d2600;
+      font-size: 1.3rem;
+      font-weight: 600;
+      padding: 1rem 0 1.5rem 0;
+      width: 43rem;
+}
+
+.home-bottom {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 1rem .3rem;
+  justify-content: space-between;
   position: relative;
   width: 100%;
 }
@@ -937,6 +968,7 @@ form {
   background-color: #bbb157;
   box-shadow: 0 -5px 5px 5px rgba(223, 189, 105, .934), 0 5px 5px 5px rgba(223, 189, 105, .934);
   border-radius: 5px;
+  padding: .5rem 0 1rem 0;
 }
 
 .photo-row {
