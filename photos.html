@@ -1,116 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Olga Samolevska</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js" defer></script>
-    </head>
-    <body>
-        <header class="navbar" id="topNavbar">
-            <div class="navbar-home">
-                <a href="index.html"><img src="assets/images/Olga-main2.jpg" class="logo-img" alt="Olga Samolevskaya"></a>
-                <a href="index.html" class="navbar-title">Ольга Самолевська</a>
-            </div>
-            <div class="navbar-links hide">
-                <li><a href="movies.html" >Фільми</a></li>
-                <li><a href="photos.html" class="active" >Фото</a></li>
-                <li><a href="poems.html">Вiршi</a></li>
-                <li><a href="ruspoems.html">Стихи</a></li>
-                <li><a href="articles.html">Статті</a></li>
-                <li><a href="contacts.html">Контакти</a></li>
-            </div>
-            <div class="toggle-btn">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
-        <div class="photos">
-            <section class="photo-section">
-                <h2 class="photo-group">Гра Свiтла</h2>
-                <div class="photo-row">
-                    <div class="photo-card">
-                        <img class="photo-imgV" src="assets/images/flowers&tree.jpg" alt="Flowers and tree" />
-                    </div>
-                    <div class="photo-card">
-                      <img class="photo-imgV" src="assets/images/light1.jpg" alt="Flowers in the room" />
-                    </div>
-                    <div class="photo-card">
-                      <img class="photo-imgV" src="assets/images/light2.jpg" alt="Cat in the room" />
-                    </div>
-                    <div class="photo-card">
-                      <img class="photo-imgV" src="assets/images/light3.jpg" alt="Білі квіти у темряві" />
-                    </div>
-                    <div class="photo-card">
-                        <img class="photo-imgV" src="assets/images/flowers8.jpg" alt="Flowers" />
-                    </div>
-                </div>
-                <h2 class="photo-group">Мій світ</h2>
-                <div class="photo-row">
-                    <div class="photo-card">
-                        <img class="photo-imgH" src="assets/images/odin.jpg" alt="Церква" />
-                    </div>
-                    <div class="photo-card">
-                        <img class="photo-imgH" src="assets/images/phenomen.jpg" alt="Face" />
-                    </div>
-                    <div class="photo-card">
-                        <img class="photo-imgH" src="assets/images/yellow_plants.jpg" alt="Yellow plants" />
-                    </div>
-                </div>
-                <h2 class="photo-group">Bійна</h2>
-                <div class="photo-row">
-                    <div class="photo-card">
-                        <img class="photo-imgV" src="assets/images/city_war.jpg" alt="Duke" />
-                    </div>
-                    <div class="photo-card">
-                        <img class="photo-imgH" src="assets/images/bus_stop.jpg" alt="Face" />
-                    </div>
-                    <div class="photo-card">
-                        <img class="photo-imgV" src="assets/images/vitaliy.jpg" alt="Vitaliy" />
-                    </div>
-                </div>
-                <h2 class="photo-group">Моє життя</h2>
-                <div class="photo-row">
-                    <div class="photo-card">
-                        <img class="photo-imgV" src="assets/images/children.jpg" alt="Children" />
-                    </div>
-                    <div class="photo-card">
-                        <img class="photo-imgV" src="assets/images/cat.jpg" alt="Cat" />
-                    </div>
-                    <div class="photo-card">
-                        <img class="photo-imgV" src="assets/images/fox.jpg" alt="Fox" />
-                    </div>
-                    <div class="photo-card">
-                        <img class="photo-imgV" src="assets/images/Olga-main.jpg" alt="Olga" />
-                    </div>
-                </div>
-                
-                <div class="photo-row"></div>
-            </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olga Samolevska</title>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="navbar" id="topNavbar">
+      <div class="navbar-home">
+        <a href="index.html"
+          ><img
+            src="assets/images/Olga-main2.jpg"
+            class="logo-img"
+            alt="Olga Samolevskaya"
+        /></a>
+        <a href="index.html" class="navbar-title">Ольга Самолевська</a>
+      </div>
+      <div class="navbar-links hide">
+        <li><a href="movies.html">Фільми</a></li>
+        <li><a href="photos.html" class="active">Фото</a></li>
+        <li><a href="poems.html">Вiршi</a></li>
+        <li><a href="ruspoems.html">Стихи</a></li>
+        <li><a href="articles.html">Статті</a></li>
+        <li><a href="contacts.html">Контакти</a></li>
+      </div>
+      <div class="toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+    <div class="photos">
+      <section class="photo-section">
+        <h2 class="photo-group">Гра Свiтла</h2>
+        <div class="photo-row">
+          <div class="photo-card">
+            <img
+              class="photo-imgV"
+              src="assets/images/flowers&tree.jpg"
+              alt="Flowers and tree"
+            />
+          </div>
+          <div class="photo-card">
+            <img
+              class="photo-imgV"
+              src="assets/images/light1.jpg"
+              alt="Flowers in the room"
+            />
+          </div>
+          <div class="photo-card">
+            <img
+              class="photo-imgV"
+              src="assets/images/light2.jpg"
+              alt="Cat in the room"
+            />
+          </div>
+          <div class="photo-card">
+            <img
+              class="photo-imgV"
+              src="assets/images/light3.jpg"
+              alt="Білі квіти у темряві"
+            />
+          </div>
+          <div class="photo-card">
+            <img
+              class="photo-imgV"
+              src="assets/images/flowers8.jpg"
+              alt="Flowers"
+            />
+          </div>
         </div>
-        <footer class="footer">
-                <div class="singleCol social-media-icons-white d-flex justify-content-evenly">
-                    <a
-                        href="https://www.facebook.com/olga.samolevska"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                    <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a
-                        href="https://www.youtube.com/channel/UCdgv1x-RtCYk_M3uOlRH86A"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                    <i class="fa-brands fa-youtube"></i>
-                    </a>
-                </div>
-                <small class="copyright"></small> 
-        </footer>
-    </body>
+        <h2 class="photo-group">Мій світ</h2>
+        <div class="photo-row">
+          <div class="photo-card">
+            <img class="photo-imgH" src="assets/images/odin.jpg" alt="Церква" />
+          </div>
+          <div class="photo-card">
+            <img
+              class="photo-imgH"
+              src="assets/images/phenomen.jpg"
+              alt="Face"
+            />
+          </div>
+          <div class="photo-card">
+            <img
+              class="photo-imgH"
+              src="assets/images/yellow_plants.jpg"
+              alt="Yellow plants"
+            />
+          </div>
+        </div>
+        <h2 class="photo-group">Bійна</h2>
+        <div class="photo-row">
+          <div class="photo-card">
+            <img
+              class="photo-imgV"
+              src="assets/images/city_war.jpg"
+              alt="Duke"
+            />
+          </div>
+          <div class="photo-card">
+            <img
+              class="photo-imgH"
+              src="assets/images/bus_stop.jpg"
+              alt="Face"
+            />
+          </div>
+          <div class="photo-card">
+            <img
+              class="photo-imgV"
+              src="assets/images/vitaliy.jpg"
+              alt="Vitaliy"
+            />
+          </div>
+        </div>
+        <h2 class="photo-group">Моє життя</h2>
+        <div class="photo-row">
+          <div class="photo-card">
+            <img
+              class="photo-imgV"
+              src="assets/images/children.jpg"
+              alt="Children"
+            />
+          </div>
+          <div class="photo-card">
+            <img class="photo-imgV" src="assets/images/cat.jpg" alt="Cat" />
+          </div>
+          <div class="photo-card">
+            <img class="photo-imgV" src="assets/images/fox.jpg" alt="Fox" />
+          </div>
+          <div class="photo-card">
+            <img
+              class="photo-imgV"
+              src="assets/images/Olga-main.jpg"
+              alt="Olga"
+            />
+          </div>
+        </div>
+
+        <div class="photo-row"></div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div
+        class="singleCol social-media-icons-white d-flex justify-content-evenly"
+      >
+        <a
+          href="https://www.facebook.com/olga.samolevska"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCdgv1x-RtCYk_M3uOlRH86A"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
+      <small class="copyright"></small>
+    </footer>
+  </body>
 </html>
