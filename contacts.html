@@ -1,86 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Olga Samolevska</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-        <link rel="stylesheet" href="style.css">
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script src="script.js" defer></script>
-        <script src="contacts.js" defer></script>
-    </head>
-    <body>
-        <header class="navbar" id="topNavbar">
-            <div class="navbar-home">
-                <a href="index.html"><img src="assets/images/Olga-main2.jpg" class="logo-img" alt="Olga Samolevskaya"></a>
-                <a href="index.html" class="navbar-title">Ольга Самолевська</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olga Samolevska</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js" defer></script>
+    <script src="contacts.js" defer></script>
+  </head>
+  <body>
+    <header class="navbar" id="topNavbar">
+      <div class="navbar-home">
+        <a href="index.html"
+          ><img
+            src="assets/images/Olga-main2.jpg"
+            class="logo-img"
+            alt="Olga Samolevskaya"
+        /></a>
+        <a href="index.html" class="navbar-title">Ольга Самолевська</a>
+      </div>
+      <div class="navbar-links hide">
+        <li><a href="movies.html">Фільми</a></li>
+        <li><a href="photos.html">Фото</a></li>
+        <li><a href="poems.html">Вiршi</a></li>
+        <li><a href="ruspoems.html">Стихи</a></li>
+        <li><a href="articles.html">Статті</a></li>
+        <li><a href="contacts.html" class="active">Контакти</a></li>
+      </div>
+      <i class="fa-solid fa-bars toggle-btn"></i>
+      <i class="fa-solid fa-close close-toggle-btn"></i>
+    </header>
+    <div class="contacts">
+      <div class="contact">
+        <h2>Будь ласка, зв'яжіться з нами електронною поштою:</h2>
+        <div class="contact-form-frame">
+          <form id="contact-form">
+            <input type="hidden" name="contact_number" />
+            <label for="from_name" class="contact-label">Ім'я:</label>
+            <div class="input-container">
+              <i class="fa-solid fa-user"></i>
+              <input
+                class="contact-field"
+                type="text"
+                name="from_name"
+                placeholder="Ім'я"
+                required
+              />
             </div>
-            <div class="navbar-links hide">
-                <li><a href="movies.html" >Фільми</a></li>
-                <li><a href="photos.html" >Фото</a></li>
-                <li><a href="poems.html">Вiршi</a></li>
-                <li><a href="ruspoems.html">Стихи</a></li>
-                <li><a href="articles.html">Статті</a></li>
-                <li><a href="contacts.html" class="active">Контакти</a></li>
+            <label for="from_email" class="contact-label"
+              >Електронна пошта:</label
+            >
+            <div class="input-container">
+              <i class="fa-solid fa-envelope"></i>
+              <input
+                class="contact-field"
+                type="email"
+                name="from_email"
+                placeholder="Електронна пошта"
+                required
+              />
             </div>
-            <div class="toggle-btn">
-                <i class="fa-solid fa-bars"></i>
+            <label for="subject" class="contact-label">Тема</label>
+            <div class="input-container">
+              <i class="fa-solid fa-pen-nib"></i>
+              <input
+                class="contact-field"
+                type="text"
+                name="subject"
+                placeholder="Тема"
+              />
             </div>
-        </header>
-        <div class="contacts">
-          <div class="contact">
-            <h2>Будь ласка, зв'яжіться з нами електронною поштою:</h2>
-            <div class="contact-form-frame">
-                <form id="contact-form">
-                    <input type="hidden" name="contact_number">
-                    <label for="from_name" class="contact-label">Ім'я:</label>
-                    <div class="input-container">                        
-                        <i class="fa-solid fa-user"></i>
-                        <input class="contact-field" type="text" name="from_name" placeholder="Ім'я" required>
-                    </div>
-                    <label for="from_email" class="contact-label">Електронна пошта:</label>
-                    <div class="input-container">  
-                        <i class="fa-solid fa-envelope"></i>
-                        <input class="contact-field" type="email" name="from_email" placeholder="Електронна пошта" required> 
-                    </div>
-                    <label for="subject" class="contact-label">Тема</label>
-                    <div class="input-container">
-                        <i class="fa-solid fa-pen-nib"></i> 
-                        <input class="contact-field" type="text" name="subject" placeholder="Тема">
-                    </div>
-                    <label for="message" class="contact-label">Повідомлення:</label>
-                    <div class="input-container"> 
-                        <textarea class="contact-field-message" name="message" required placeholder="Повідомлення"></textarea>
-                    </div>
-                    <input class="contact-btn" type="submit" onClick=(cleanForm) value="Надіслати">
-                </form>
+            <label for="message" class="contact-label">Повідомлення:</label>
+            <div class="input-container">
+              <textarea
+                class="contact-field-message"
+                name="message"
+                required
+                placeholder="Повідомлення"
+              ></textarea>
             </div>
-          </div>           
+            <input
+              class="contact-btn"
+              type="submit"
+              onClick="(cleanForm)"
+              value="Надіслати"
+            />
+          </form>
         </div>
-        <footer class="footer">
-                <div class="singleCol social-media-icons-white d-flex justify-content-evenly">
-                    <a
-                        href="https://www.facebook.com/olga.samolevska"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                    <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a
-                        href="https://www.youtube.com/channel/UCdgv1x-RtCYk_M3uOlRH86A"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                    <i class="fa-brands fa-youtube"></i>
-                    </a>
-                </div>
-                <small class="copyright"></small> 
-        </footer>
-    </body>
+      </div>
+    </div>
+    <footer class="footer">
+      <div
+        class="singleCol social-media-icons-white d-flex justify-content-evenly"
+      >
+        <a
+          href="https://www.facebook.com/olga.samolevska"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCdgv1x-RtCYk_M3uOlRH86A"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
+      <small class="copyright"></small>
+    </footer>
+  </body>
 </html>

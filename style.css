@@ -84,13 +84,14 @@ h5 {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  position: sticky !important;
+  position: sticky;
   top: 0;
   z-index: 10;
 }
 
 .navbar-home {
   position: static;
+  display: flex;
 }
 
 .navbar-home a {
@@ -137,23 +138,26 @@ h5 {
 
 .navbar-title,
 .navbar-title a {
+  display: flex;
   color: #f4f0e8;
   font-size: 1.3rem;
   font-weight: bold;
-  padding-top: 1.3rem;
+  align-items: center;
   text-decoration: none;
 }
 
 .navbar-title.active,
 .navbar-title:hover {
+  display: flex;
   color: #ffcc66;
   font-size: 1.4rem;
   font-weight: bold;
-  padding-top: 1.3rem;
+  align-items: center;
   text-decoration: underline;
 }
 
-.toggle-btn {
+.toggle-btn,
+.close-toggle-btn {
   display: none;
 }
 
@@ -552,6 +556,10 @@ video {
     rgb(255, 255, 255) 0px 0px 0px 2px, rgba(0, 0, 0, 0.3) 0.3em 0.3em 1em;
 }
 
+.cards {
+  width: 100%;
+}
+
 .cards-interrior-link {
   margin-top: 5.5rem;
 }
@@ -561,7 +569,7 @@ video {
   color: #7d2600;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   height: 3rem;
   background-color: rgb(224, 201, 166);
@@ -592,7 +600,8 @@ video {
   display: flex;
   align-items: center;
   color: #f4f0e8;
-  width: 236px;
+  padding-top: 10px;
+  width: 264px;
   height: 50px;
   font-size: 1.2rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -630,8 +639,8 @@ section.sidebar-links {
   text-align: left;
   margin: 0 0 -80px 0;
   top: 4.8rem;
-  left: 0;
-  width: 270px;
+  left: -280px;
+  width: 280px;
   min-height: 70vh;
   color: #f4f0e8;
   font-size: 1.2rem;
@@ -644,7 +653,7 @@ section.sidebar-links {
 .sidebar-btn {
   position: fixed;
   top: 4.8rem;
-  left: 242px;
+  left: 0;
   width: 28px;
   height: 50px;
   padding-top: 10px;
@@ -656,14 +665,14 @@ section.sidebar-links {
   border: none;
   cursor: pointer;
   color: #a33201 !important;
-  transition: transform 0.5s;
   animation: fade-in-from-left 0.5s;
-  z-index: 5;
+  z-index: 3;
+  transition: transform 0.5s;
   background: linear-gradient(90deg, #e0c9a6, #e0c9a6);
 }
 
 .sidebar-btn-move {
-  transform: translateX(-242px);
+  transform: translateX(280px);
   position: fixed;
   display: flex;
   align-items: center;
@@ -671,11 +680,12 @@ section.sidebar-links {
   height: 50px;
   padding-top: 0;
   transition: transform 0.5s;
-  z-index: 2;
+  z-index: 3;
 }
 
 .sidebar-links-move {
-  transform: translateX(-100%);
+  transform: translateX(280px);
+  transition: transform 0.5s;
 }
 
 .sidebar-link {
@@ -1028,41 +1038,6 @@ form {
     justify-content: center;
   }
 
-  .navbar {
-    align-items: center;
-    background: linear-gradient(
-      90deg,
-      #a33201,
-      #a33201,
-      #a33201,
-      #ce3f01,
-      #e0c9a6
-    );
-    justify-content: space-between;
-    min-height: 5rem;
-    position: sticky !important;
-    top: 0;
-    width: 100vw;
-    z-index: 5;
-  }
-
-  .navbar-links {
-    background: linear-gradient(
-      0deg,
-      #f4f0e8,
-      #ce3f01,
-      #a33201,
-      #a33201,
-      #a33201,
-      #a33201,
-      #a33201
-    );
-    height: auto;
-    min-width: 20rem;
-    position: fixed;
-    top: 5rem;
-  }
-
   .navbar-links a {
     animation: fade-in-from-top 0.5s;
     display: block;
@@ -1087,9 +1062,19 @@ form {
     margin-right: 1.5rem;
     padding-right: 20px;
   }
+
+  .close-toggle-btn {
+    animation: fade-in-from-top 0.5s;
+    font-size: 1.2rem;
+    color: #f4f0e8;
+    cursor: pointer;
+    display: none;
+    margin-right: 1.5rem;
+    padding-right: 20px;
+  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .card-poem {
     width: 80%;
   }
@@ -1109,10 +1094,6 @@ form {
   .contact-form-frame {
     min-height: 80%;
     width: 80%;
-  }
-
-  .hide {
-    display: none;
   }
 
   .home-about {
@@ -1137,38 +1118,7 @@ form {
   }
 
   .navbar {
-    align-items: center;
-    background: linear-gradient(
-      90deg,
-      #a33201,
-      #a33201,
-      #a33201,
-      #ce3f01,
-      #e0c9a6
-    );
-    display: flex;
-    justify-content: space-between;
     min-height: 5rem;
-    position: sticky !important;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-  }
-
-  .navbar-links {
-    background: linear-gradient(
-      0deg,
-      #f4f0e8,
-      #ce3f01,
-      #a33201,
-      #a33201,
-      #a33201,
-      #a33201,
-      #a33201
-    );
-    min-width: 12rem;
-    position: fixed;
-    top: 5rem;
   }
 
   .navbar-links a {
@@ -1185,17 +1135,20 @@ form {
     text-decoration: underline;
   }
 
+  .poems-title {
+    font-size: 1.3rem;
+  }
+
   .toggle-btn {
     color: #f4f0e8;
     cursor: pointer;
     display: block;
     font-size: 1rem;
-    margin-bottom: 10px;
     padding-right: 20px;
   }
 }
 
-@media (max-width: 400px) {
+@media (mim-width: 400px) {
   .card-poem {
     width: 90%;
   }
@@ -1215,10 +1168,6 @@ form {
 
   .contact-btn:hover {
     width: 81%;
-  }
-
-  .hide {
-    display: none;
   }
 
   .home-about {
@@ -1249,50 +1198,13 @@ form {
     justify-content: center;
   }
 
-  html,
-  body {
-    width: auto !important;
-    overflow-x: hidden !important;
-  }
-
   .logo-img {
     height: 3rem;
     margin: 0.3rem 1rem 0 1rem;
   }
 
   .navbar {
-    align-items: center;
-    background: linear-gradient(
-      90deg,
-      #a33201,
-      #a33201,
-      #a33201,
-      #ce3f01,
-      #e0c9a6
-    );
-    display: flex;
-    justify-content: space-between;
     min-height: 5rem;
-    position: sticky !important;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-  }
-
-  .navbar-links {
-    background: linear-gradient(
-      0deg,
-      #f4f0e8,
-      #ce3f01,
-      #a33201,
-      #a33201,
-      #a33201,
-      #a33201,
-      #a33201
-    );
-    min-width: 12rem;
-    position: fixed;
-    top: 5rem;
   }
 
   .navbar-links a {
@@ -1302,6 +1214,10 @@ form {
     text-align: center;
   }
 
+  .navbar-title {
+    font-size: 1.1rem;
+  }
+
   .navbar-links a:hover,
   .navbar-links a.active {
     color: #ffcc66;
@@ -1309,20 +1225,14 @@ form {
     text-decoration: underline;
   }
 
-  .navbar-title:hover,
-  .navbar-title.active {
-    color: #ffcc66;
+  .poems-title {
     font-size: 1.2rem;
-    padding-top: 1.3rem;
-    text-decoration: underline;
   }
 
   .toggle-btn {
     color: #f4f0e8;
     cursor: pointer;
-    display: block;
     font-size: 1rem;
-    margin-bottom: 10px;
     padding-right: 20px;
   }
 }
