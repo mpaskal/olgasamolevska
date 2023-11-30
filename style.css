@@ -109,7 +109,7 @@ h5 {
     #ce3f01,
     #f4f0e8
   );
-  margin-right: 3rem;
+  margin-right: 1rem;
   position: static;
 }
 
@@ -1121,18 +1121,17 @@ form {
   }
 
   .home-about {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .home-article-text {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .home-article-title {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
-
-  .home-top {
+  d .home-top {
     justify-content: center;
   }
 
@@ -1148,6 +1147,7 @@ form {
   .navbar-links a {
     display: block;
     margin-bottom: 1.5rem;
+    margin-right: 0;
     padding: 10px 0;
     text-align: center;
   }
@@ -1160,7 +1160,7 @@ form {
   }
 
   .poems-title {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   .toggle-btn {
@@ -1195,7 +1195,7 @@ form {
   }
 
   .home-about {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 1.6;
     width: 80%;
   }
@@ -1206,11 +1206,11 @@ form {
   }
 
   .home-article-text {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .home-article-title {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   .home-red-img {
@@ -1234,6 +1234,7 @@ form {
   .navbar-links a {
     display: block;
     margin-bottom: 1.5rem;
+    margin-right: 0;
     padding: 10px 0;
     text-align: center;
   }
@@ -1250,7 +1251,7 @@ form {
   }
 
   .poems-title {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .toggle-btn {
