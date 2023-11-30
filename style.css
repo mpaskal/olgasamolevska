@@ -57,7 +57,6 @@ h4,
 h5 {
   font-weight: 700;
   line-height: 1.28571429em;
-  margin-top: 1.3rem;
   padding: 0;
 }
 
@@ -444,7 +443,7 @@ video {
 
 .movie-about {
   color: #7d2600;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin: 1rem 0.5rem;
 }
 
@@ -454,15 +453,14 @@ video {
     0 5px 5px 5px rgba(223, 189, 105, 0.934);
   color: #7d2600;
   flex: 50%;
-  font-size: 1.2rem;
   height: auto;
   justify-items: end;
 }
 
 .movie-details {
   display: flex;
-  font-size: 1.3rem;
-  line-height: 1.4;
+  font-size: 1.1rem;
+  line-height: 1.5;
   padding-left: 1rem;
 }
 
@@ -480,18 +478,15 @@ video {
 }
 
 .movie-title {
+  align-items: center;
   background-color: #bbb157;
   box-shadow: 0 -5px 5px 5px rgba(223, 189, 105, 0.934),
     0 5px 5px 5px rgba(223, 189, 105, 0.934);
   color: #7d2600;
+  display: flex;
+  flex-direction: column;
   height: 7rem;
-  padding: 1.3rem 0;
-}
-
-.movie-title h2,
-.movie-title h3 {
-  margin: 0;
-  padding-bottom: 0.8rem;
+  justify-content: center;
 }
 
 #movies {
@@ -501,6 +496,35 @@ video {
   background-color: #bbb157;
   box-shadow: 0 -5px 5px 5px rgba(223, 189, 105, 0.934),
     0 5px 5px 5px rgba(223, 189, 105, 0.934);
+}
+
+.fa-play {
+  color: #7d2600;
+  padding-left: 1rem;
+  text-decoration: none;
+}
+
+.movie-contact {
+  padding-left: 1rem;
+  cursor: pointer;
+}
+
+.movie-play .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #9d4119;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.movie-play:hover .tooltiptext {
+  visibility: visible;
 }
 
 .movies-page {

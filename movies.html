@@ -12,6 +12,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
@@ -39,8 +43,23 @@
     </header>
     <div class="movies">
       <div class="movie-title">
-        <h2>Час Недитячий</h2>
-        <h3>Фрагменти. Зв'яжіться з нами для перегляду фільму повністю</h3>
+        <h2>
+          Час Недитячий
+          <a
+            href="https://www.youtube.com/watch?v=M76aQUSTuuI"
+            class="movie-play"
+            target="_blank"
+          >
+            <i class="fa-solid fa-play"></i>
+            <span class="tooltiptext">Дивитись</span>
+          </a>
+        </h2>
+        <h3>
+          Фрагменти. Зв'яжіться з нами для перегляду фільму повністю
+          <span class="movie-contact"
+            ><i onclick="toContact()" class="fa fa-envelope"></i
+          ></span>
+        </h3>
       </div>
       <section class="movie-section">
         <div class="movie">
@@ -78,7 +97,9 @@
           </div>
         </div>
       </section>
-      <h2 class="movie-title">Катерина Білокур. Послання</h2>
+      <div class="movie-title">
+        <h2>Катерина Білокур. Послання</h2>
+      </div>
       <section class="movie-section">
         <div class="movie">
           <iframe
@@ -96,9 +117,6 @@
           <div class="movie-about"></div>
           <div class="movie-details">
             <ul>
-              <li>Нагороди:</li>
-              <li>Рік:</li>
-              <li>Прем'єра в Україні:</li>
               <li>Мова: Українська</li>
               <li>Країна виробництва: Україна</li>
               <li>Жанр: Документальний</li>
@@ -115,17 +133,57 @@
           </div>
         </div>
       </section>
-
-      <a href="https://youtu.be/nX7TABtqPG4?si=x_sm4EVvjvIhxtC-" target="_blank"
-        ><h2 class="movie-title">
+      <div class="movie-title">
+        <h2>Первая леди</h2>
+        <h3>First Lady of the Estrangement Zone</h3>
+      </div>
+      <section class="movie-section">
+        <div class="movie">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/JIq_AL1fFPM?si=faQWiNhk41M2EFCJ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="movie-description">
+          <div class="movie-about"></div>
+          <div class="movie-details">
+            <ul>
+              <li>Рік: 2014</li>
+              <li>Мова: Українська</li>
+              <li>Країна виробництва: Україна</li>
+              <li>Жанр: Документальний</li>
+            </ul>
+            <ul>
+              <li>Компанія виробник: Укртелефiльм</li>
+              <li>Режисер: Ольга Самолевська</li>
+              <li>Автор сценарію: Ольга Самолевська</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="movie-title">
+        <h2>
           Лікарська справа в Україні. «Пам'ятай про життя»
-        </h2></a
-      >
+          <a
+            href="https://youtu.be/nX7TABtqPG4?si=x_sm4EVvjvIhxtC-"
+            class="movie-play"
+            target="_blank"
+          >
+            <i class="fa-solid fa-play"></i>
+            <span class="tooltiptext">Дивитись</span>
+          </a>
+        </h2>
+      </div>
       <section class="movie-section">
         <div class="movie"></div>
         <div class="movie-description">
           <div class="movie-about">
-            Про досконалість та велич мозку, серця., клітин всього людського
+            Про досконалість та велич мозку, серця, клітин всього людського
             організму, як вищого творіння Божого. Без тексту, засобами кіно
             розповідається про абсурдність змагання між пошуками методів
             спасіння людського життя і витонченим вдосконаленням зброї масового
@@ -133,46 +191,37 @@
           </div>
           <div class="movie-details">
             <ul>
-              <li>Нагороди:</li>
               <li>Рік: 1993</li>
-              <li>Прем'єра в Україні:</li>
               <li>Мова: Українська</li>
               <li>Країна виробництва: Україна</li>
               <li>Жанр: Документальний</li>
             </ul>
             <ul>
-              <li>Компанія виробник: «Київнаукфільм»</li>
+              <li>Компанія виробник: Київнаукфільм</li>
               <li>Режисер: Ольга Самолевська</li>
-              <li>Продюсер:</li>
               <li>Автор сценарію: Ольга Самолевська</li>
-              <li>Композитор:</li>
             </ul>
           </div>
         </div>
       </section>
-
-      <h2 class="movie-title">Пам'яті загиблих споруд</h2>
+      <div class="movie-title">
+        <h2>Пам'яті загиблих споруд</h2>
+        <h3>
+          Зв'яжіться з нами для перегляду фільму повністю
+          <span class="movie-contact"
+            ><i onclick="toContact()" class="fa fa-envelope"></i
+          ></span>
+        </h3>
+      </div>
       <section class="movie-section">
-        <div class="movie">
-          <video width="300" controls>
-            <source
-              src="https://youtu.be/fVhsynNVzhs?si=vbnS8oyy368d3zTu"
-              type="video/mp4"
-              width="500px"
-              height="282px"
-            />
-            Your browser does not support HTML5 video.
-          </video>
-        </div>
+        <div class="movie"></div>
         <div class="movie-description">
           <div class="movie-about">
             Перший фільм про руйнацію Києва радянською владою
           </div>
           <div class="movie-details">
             <ul>
-              <li>Нагороди:</li>
               <li>Рік: 1988</li>
-              <li>Прем'єра в Україні:</li>
               <li>Мова: Українська</li>
               <li>Країна виробництва: Україна</li>
               <li>Жанр: Документальний</li>
@@ -183,26 +232,25 @@
                 фільмів
               </li>
               <li>Режисер: Ольга Самолевська</li>
-              <li>Продюсер:</li>
               <li>Автор сценарію: Юрий Iванов</li>
-              <li>Композитор:</li>
             </ul>
           </div>
         </div>
       </section>
-
-      <h2 class="movie-title">Я себе запитую</h2>
+      <div class="movie-title">
+        <h2>Я себе запитую</h2>
+      </div>
       <section class="movie-section">
         <div class="movie">
-          <video width="300" controls>
-            <source
-              src="https://www.youtube.com/watch?v=igKkYt-3fww"
-              type="video/mp4"
-              width="500px"
-              height="282px"
-            />
-            Your browser does not support HTML5 video.
-          </video>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/skXvuT2Y4kM?si=IAX_bkx5KSyTd-p9"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
         </div>
         <div class="movie-description">
           <div class="movie-about">
@@ -210,7 +258,7 @@
             Женя Кісін (нині володар багатьох міжнародних премій, почесний
             доктор музики Гонконгського та Єрусалімського університету,
             Манхеттенської школи музики, почесний член Королівської академії
-            музики (Лондон), художниця Русіко Петвіашвілі (нині володар
+            музики (Лондон)), художниця Русіко Петвіашвілі (нині володар
             Інтернаціональної премії «Посол миру», «Ордена Пошани» Грузинської
             республіки, президентського ордена Сяяння). Ніка Турбіна (Торбіна),
             вірші за яку, як потім виявилося, писала мама Майя Ніканоркіна.
@@ -224,16 +272,14 @@
                 конференції INPUT (UNESCO), представник України на Міжнародному
                 кінофорумі в Ерфурті (Німеччина,1987)
               </li>
+            </ul>
+            <ul>
               <li>Рік: 1985</li>
-              <li>Прем'єра в Україні:</li>
               <li>Мова: Російська</li>
               <li>Країна виробництва: Україна</li>
               <li>Жанр: Документальний</li>
-            </ul>
-            <ul>
               <li>Компанія виробник: Укркінохроніка</li>
               <li>Режисер: Ольга Самолевська</li>
-              <li>Продюсер:</li>
               <li>Автор сценарію: Ольга Самолевська</li>
             </ul>
           </div>

@@ -1,6 +1,7 @@
 const hamburger = document.querySelector(".toggle-btn");
 const closed = document.querySelector(".close-toggle-btn");
 const navLink = document.querySelector(".navbar-links");
+const movieContact = document.querySelectorAll(".movie-contact");
 
 hamburger.addEventListener("click", () => {
   navLink.classList.toggle("hide");
@@ -13,6 +14,14 @@ closed.addEventListener("click", () => {
   hamburger.style.display = "block"; // Show the navbar content
   closed.style.display = "none";
 });
+
+function toContact() {
+  movieContact.forEach((item) => {
+    item.addEventListener("click", function () {
+      window.location.assign("contacts.html");
+    });
+  });
+}
 
 // copyright
 function todayDate() {
