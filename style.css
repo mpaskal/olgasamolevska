@@ -173,9 +173,8 @@ h5 {
 .home-about-img {
   box-shadow: 0 -5px 5px 5px rgba(223, 189, 105, 0.934),
     0 5px 5px 5px rgba(223, 189, 105, 0.934), 0 2px 5px 10px rgba(0, 0, 0, 0.6);
-  max-height: 30rem;
-  height: auto;
-  margin: 1rem 1rem;
+  height: 30rem;
+  margin: 0.5rem 1rem;
   position: relative;
   width: auto;
 }
@@ -390,7 +389,7 @@ h5 {
   color: #7d2600;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0.5rem;
   position: relative;
 }
@@ -1059,6 +1058,11 @@ form {
     display: none;
   }
 
+  .home-about-img {
+    height: 30rem;
+    width: auto;
+  }
+
   .home-red-img {
     height: 50rem;
     width: auto;
@@ -1105,6 +1109,11 @@ form {
 }
 
 @media (max-width: 800px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   .card-poem {
     width: 80%;
   }
@@ -1128,6 +1137,11 @@ form {
 
   .home-about {
     font-size: 1rem;
+  }
+
+  .home-about-img {
+    height: 25rem;
+    width: auto;
   }
 
   .home-article-text,
@@ -1182,6 +1196,11 @@ form {
 }
 
 @media (mim-width: 400px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   .card-poem {
     width: 90%;
   }
@@ -1207,6 +1226,11 @@ form {
     font-size: 1rem;
     line-height: 1.6;
     width: 80%;
+  }
+
+  .home-about-img {
+    height: 25rem;
+    width: auto;
   }
 
   .home-article-text,
