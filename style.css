@@ -1118,7 +1118,7 @@ form {
   }
 }
 
-@media (min-width: 700px) {
+@media (max-width: 900px) {
   html,
   body {
     overflow-x: hidden;
@@ -1156,12 +1156,22 @@ form {
     font-size: 1.2rem;
   }
 
-  .home-article-img {
-    width: 100%;
-  }
-
   .home-article-title {
     font-size: 1.3rem;
+  }
+
+  .home-article-img {
+    height: auto;
+    width: 80%;
+  }
+
+  .home-img {
+    height: auto;
+    width: 80%;
+  }
+
+  .home-new-movie {
+    width: 60%;
   }
 
   .home-top {
@@ -1205,7 +1215,7 @@ form {
   }
 }
 
-@media (min-width: 300px) {
+@media (max-width: 500px) {
   html,
   body {
     overflow-x: hidden;
@@ -1240,6 +1250,7 @@ form {
 
   .home-about-img {
     height: 30rem;
+    width: 100%;
   }
 
   .home-article-text,
@@ -1253,6 +1264,17 @@ form {
   }
 
   .home-article-img {
+    height: auto;
+    width: 100%;
+  }
+
+  .home-img {
+    height: auto;
+    width: 100%;
+  }
+
+  .home-new-movie {
+    height: auto;
     width: 100%;
   }
 
