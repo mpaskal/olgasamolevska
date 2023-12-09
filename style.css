@@ -169,7 +169,7 @@ h5 {
   padding: 1rem;
   width: 55%;
   position: relative;
-  text-align: justify;
+  text-align: left;
 }
 
 .home-about-img {
@@ -819,7 +819,7 @@ form {
 }
 
 .contact-label {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 600;
   margin: 0.5rem auto;
 }
@@ -946,7 +946,7 @@ form {
 
 .article-card-text {
   color: #7d2600;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .article-title {
@@ -1093,7 +1093,7 @@ form {
   .navbar-links a.active {
     color: #ffcc66;
     display: flex;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     justify-content: center;
     text-decoration: underline;
   }
@@ -1118,14 +1118,14 @@ form {
   }
 }
 
-@media (max-width: 800px) {
+@media (min-width: 700px) {
   html,
   body {
     overflow-x: hidden;
   }
 
   .card-poem {
-    width: 80%;
+    width: 90%;
   }
 
   .contact {
@@ -1146,14 +1146,14 @@ form {
   }
 
   .home-about {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     width: 90%;
   }
 
   .home-article-text,
   .home-poem-text,
   .card-poem-text {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .home-article-img {
@@ -1205,14 +1205,14 @@ form {
   }
 }
 
-@media (mim-width: 400px) {
+@media (min-width: 300px) {
   html,
   body {
     overflow-x: hidden;
   }
 
   .card-poem {
-    width: 90%;
+    width: 95%;
   }
 
   .contact {
@@ -1233,24 +1233,23 @@ form {
   }
 
   .home-about {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.6;
     width: 90%;
   }
 
   .home-about-img {
-    height: 25rem;
-    width: 100%;
+    height: 30rem;
   }
 
   .home-article-text,
   .home-poem-text,
   .card-poem-text {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   .home-article-title {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   .home-article-img {
@@ -1295,7 +1294,7 @@ form {
   }
 
   .poems-title {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .toggle-btn {
