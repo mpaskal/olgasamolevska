@@ -155,7 +155,10 @@ h5 {
   text-decoration: underline;
 }
 
-.toggle-btn,
+.toggle-btn {
+  display: none;
+}
+
 .close-toggle-btn {
   display: none;
 }

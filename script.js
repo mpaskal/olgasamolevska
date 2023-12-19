@@ -3,6 +3,22 @@ const closed = document.querySelector(".close-toggle-btn");
 const navLink = document.querySelector(".navbar-links");
 const movieContact = document.querySelectorAll(".movie-contact");
 
+// Function to hide the element
+function hideCloseNav() {
+  closed.style.display = "none";
+}
+
+// Event listener for window resize
+window.addEventListener("resize", function () {
+  // Define your condition based on window size here
+  var windowWidth = window.innerWidth;
+
+  // For example, hide the element if window width is more than 1200 pixels
+  if (windowWidth > 1200) {
+    hideCloseNav();
+  }
+});
+
 hamburger.addEventListener("click", () => {
   navLink.classList.toggle("hide");
   hamburger.style.display = "none"; // Show the navbar content
