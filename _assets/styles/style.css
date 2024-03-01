@@ -38,7 +38,7 @@ html {
 }
 
 body {
-  background: url("assets/images/apples-on-ground.jpg") no-repeat fixed;
+  background: url("../images/apples-on-ground.jpg") no-repeat fixed;
   background-size: cover;
   bottom: 0;
   left: 0;
