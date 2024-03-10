@@ -177,7 +177,7 @@ h5 {
 }
 
 .home-article {
-  background-color: var(--pages-background);
+  background-color: var(--pages-background-alt);
   color: var(--page-text);
   flex: 1 1 30rem;
 }
@@ -236,7 +236,7 @@ h5 {
 
 .home-top-new-movie {
   align-items: center;
-  background-color: var(--pages-background);
+  background-color: var(--pages-background-alt);
   color: var(--page-text);
   display: flex;
   height: 300px;
@@ -271,8 +271,8 @@ h5 {
 }
 
 .home-photo-img {
-  margin: auto;
-  width: 90%;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .home-photos {
@@ -280,6 +280,7 @@ h5 {
   color: var(--page-text);
   font-size: 1.3rem;
   font-weight: 600;
+  padding: 2rem 0 1rem 0;
 }
 
 .home-photos a {
@@ -367,7 +368,7 @@ h5 {
   color: var(--page-text);
   font-size: 1.3rem;
   font-weight: 600;
-  padding-top: 1rem;
+  padding: 1rem 0;
 }
 
 .home-videos a {
@@ -1052,7 +1053,7 @@ form {
 
   .home-img {
     height: auto;
-    width: 80%;
+    width: 50%;
   }
 
   .home-new-movie {
@@ -1163,7 +1164,7 @@ form {
 
   .home-img {
     height: auto;
-    width: 80%;
+    width: 60%;
   }
 
   .home-new-movie {
