@@ -2,6 +2,7 @@
 
 :root {
   --pages-background: #d6cd80;
+  --pages-background-alt: #cbc473;
   --page-text: #581b01;
 }
 
@@ -388,7 +389,7 @@ video {
 
 /* movies page */
 .movie {
-  background-color: #cbc473;
+  background-color: var(--pages-background-alt);
   height: 315px;
   width: 560px;
   margin: auto;
@@ -825,7 +826,7 @@ form {
   justify-content: space-evenly;
   color: var(--page-text);
   font-size: 1.2rem;
-  background-color: #c1ba6c;
+  background-color: var(--pages-background-alt);
 }
 
 .article-card {
@@ -892,7 +893,7 @@ form {
 
 .photo-row {
   align-items: center;
-  background-color: #c1ba6c;
+  background-color: var(--pages-background-alt);
   color: var(--page-text);
   display: flex;
   flex-wrap: wrap;
