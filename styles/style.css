@@ -2,6 +2,7 @@
 
 :root {
   --pages-background: #d6cd80;
+  --page-text: #581b01;
 }
 
 /* -- Keyframes -- */
@@ -171,15 +172,13 @@ h5 {
 .home-mid-left {
   height: auto;
   margin: 1rem 0;
-  position: relative;
   width: 43rem;
 }
 
 .home-article {
   background-color: var(--pages-background);
-  color: #7d2600;
+  color: var(--page-text);
   flex: 1 1 30rem;
-  position: relative;
 }
 
 .home-article-card {
@@ -207,7 +206,7 @@ h5 {
 
 .home-articles {
   background-color: var(--pages-background);
-  color: #7d2600;
+  color: var(--page-text);
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 2rem;
@@ -215,7 +214,7 @@ h5 {
 }
 
 .home-articles a {
-  color: #7d2600;
+  color: var(--page-text);
   font-size: 1.3rem;
   font-weight: bold;
   text-decoration: none;
@@ -237,7 +236,7 @@ h5 {
 .home-top-new-movie {
   align-items: center;
   background-color: var(--pages-background);
-  color: #7d2600;
+  color: var(--page-text);
   display: flex;
   height: 300px;
   justify-content: center;
@@ -257,9 +256,10 @@ h5 {
 }
 
 .home-mid {
+  background-color: var(--pages-background);
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
 }
 
@@ -270,19 +270,19 @@ h5 {
 }
 
 .home-photo-img {
-  width: 100%;
+  margin: auto;
+  width: 90%;
 }
 
 .home-photos {
   background-color: var(--pages-background);
-  color: #7d2600;
+  color: var(--page-text);
   font-size: 1.3rem;
   font-weight: 600;
-  padding: 1.2rem 0;
 }
 
 .home-photos a {
-  color: #7d2600;
+  color: var(--page-text);
   font-size: 1.3rem;
   font-weight: bold;
   text-decoration: none;
@@ -297,12 +297,13 @@ h5 {
 
 .home-poem {
   background-color: var(--pages-background);
-  width: 50%;
+  text-align: center;
+  width: 60%;
 }
 
 .home-poem-text {
   background-color: var(--pages-background);
-  color: #7d2600;
+  color: var(--page-text);
   font-style: italic;
   font-size: 1.4rem;
   line-height: 1.6;
@@ -312,7 +313,7 @@ h5 {
 }
 
 .home-poem-title {
-  color: #7d2600;
+  color: var(--page-text);
   font-size: 1.6rem;
   font-weight: 600;
   text-align: center;
@@ -321,7 +322,7 @@ h5 {
 
 .home-poems {
   background-color: var(--pages-background);
-  color: #7d2600;
+  color: var(--page-text);
   font-size: 1.3rem;
   font-weight: 600;
   margin: 0;
@@ -329,7 +330,7 @@ h5 {
 }
 
 .home-poems a {
-  color: #7d2600;
+  color: var(--page-text);
   font-size: 1.3rem;
   font-weight: bold;
   text-decoration: none;
@@ -344,31 +345,32 @@ h5 {
 
 .home-top {
   background-color: var(--pages-background);
-  color: #7d2600;
+  color: var(--page-text);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 1rem 0.5rem;
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
 }
 
 /* -- Video -- */
 .home-video-olga-wrap {
   background-color: var(--pages-background);
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
 }
 
 .home-videos {
   background-color: var(--pages-background);
-  color: #7d2600;
+  color: var(--page-text);
   font-size: 1.3rem;
   font-weight: 600;
-  padding: 1rem 0 1.5rem 0;
+  padding-top: 1rem;
 }
 
 .home-videos a {
-  color: #7d2600;
-  font-size: 1.3rem;
-  font-weight: bold;
+  color: var(--page-text);
   text-decoration: none;
 }
 
@@ -393,19 +395,20 @@ video {
 
 iframe,
 video {
-  width: 100%;
-  height: 100%;
+  height: auto;
+  margin: auto;
+  width: 90%;
 }
 
 .movie-about {
-  color: #7d2600;
+  color: var(--page-text);
   font-size: 1.2rem;
   margin: 1rem 0.5rem;
 }
 
 .movie-description {
-  background-color: #c1ba6c;
-  color: #7d2600;
+  background-color: #cbc473;
+  color: var(--page-text);
   flex: 50%;
   height: auto;
   justify-items: end;
@@ -433,7 +436,7 @@ video {
 .movie-title {
   align-items: center;
   background-color: var(--pages-background);
-  color: #7d2600;
+  color: var(--page-text);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -444,12 +447,12 @@ video {
 #movies {
   margin: 3rem 0.5rem 0 0.5rem;
   height: 50px;
-  color: #7d2600;
+  color: var(--page-text);
   background-color: var(--pages-background);
 }
 
 .fa-play {
-  color: #7d2600;
+  color: var(--page-text);
   padding-left: 1rem;
   text-decoration: none;
 }
@@ -538,7 +541,7 @@ video {
 
 .poems-title {
   display: flex;
-  color: #7d2600;
+  color: var(--page-text);
   align-items: center;
   justify-content: center;
   font-size: 1.6rem;
@@ -552,7 +555,7 @@ video {
 .card-poem-text {
   padding: 1.5rem 0 2rem 0;
   font-size: 1.4rem;
-  color: #7d2600;
+  color: var(--page-text);
   line-height: 1.6;
   margin: 0 0.2rem 0.2rem 0.2rem;
   background-color: #f4f0e8;
@@ -690,7 +693,7 @@ section.sidebar-links {
 
 .contact {
   width: 60%;
-  color: #7d2600;
+  color: var(--page-text);
   padding: 2rem 0 2rem 0;
   border-radius: 0.5rem;
   background-color: var(--pages-background);
@@ -754,7 +757,7 @@ form {
 }
 
 .contact-field:focus {
-  border-color: #7d2600;
+  border-color: var(--page-text);
   background-color: rgb(245, 227, 220);
 }
 
@@ -772,12 +775,12 @@ form {
 }
 
 .contact-field-message:focus {
-  border-color: #7d2600;
+  border-color: var(--page-text);
   background-color: rgb(245, 227, 220);
 }
 
 .contact-btn {
-  color: #7d2600;
+  color: var(--page-text);
   font-size: 1.1rem;
   font-weight: 600;
   width: 40%;
@@ -791,7 +794,7 @@ form {
 .contact-btn:hover {
   color: #8a2a01;
   background-color: lightgrey;
-  box-shadow: 0px 0px 10px 0px #7d2600;
+  box-shadow: 0px 0px 10px 0px var(--page-text);
   width: 41%;
   height: 2.1rem;
 }
@@ -806,7 +809,7 @@ form {
 .articles-year {
   align-items: center;
   background-color: var(--pages-background);
-  color: #7d2600;
+  color: var(--page-text);
   display: flex;
   height: 3rem;
   justify-content: center;
@@ -818,7 +821,7 @@ form {
   width: 100%;
   height: auto;
   justify-content: space-evenly;
-  color: #7d2600;
+  color: var(--page-text);
   font-size: 1.2rem;
   background-color: #c1ba6c;
 }
@@ -830,7 +833,7 @@ form {
   flex-direction: column;
   flex-basis: 350px;
   object-fit: cover;
-  color: #7d2600;
+  color: var(--page-text);
   font-size: 1.2rem;
   margin: 1rem;
   padding-top: 0.3rem;
@@ -845,37 +848,23 @@ form {
 }
 
 .article-card-text {
-  color: #7d2600;
+  color: var(--page-text);
   font-size: 1.2rem;
 }
 
 .article-title {
   font-weight: 500;
-  color: #7d2600;
+  color: var(--page-text);
   background-color: rgb(224, 201, 166);
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.2rem;
-  outline: none;
+  font-size: 1.4rem;
   padding: 0.5rem 0;
   border-radius: calc(0.375rem - (1px)) calc(0.375rem - (1px)) 0 0;
 }
 
-.article-title-link {
-  color: #7d2600;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 1.4rem;
-  outline: none;
-}
-
 .article-title:hover {
-  color: #c23c02;
-  cursor: pointer;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.22rem;
-  outline: none;
+  font-weight: 700;
 }
 
 .article-img {
@@ -902,7 +891,7 @@ form {
 .photo-row {
   align-items: center;
   background-color: #c1ba6c;
-  color: #7d2600;
+  color: var(--page-text);
   display: flex;
   flex-wrap: wrap;
   font-size: 1.2rem;
@@ -915,7 +904,7 @@ form {
   background-color: #f4f0e8;
   border: 1px solid rgba(0, 0, 0, 0.175);
   border-radius: 0.375rem;
-  color: #7d2600;
+  color: var(--page-text);
   display: flex;
   flex-direction: column;
   font-size: 1.2rem;
@@ -950,12 +939,22 @@ form {
     width: 60%;
   }
 
+  iframe,
+  video {
+    width: 80%;
+    height: auto;
+  }
+
   .hide {
     display: none;
   }
 
   .home-about-img {
     height: 30rem;
+  }
+
+  .home-photo-img {
+    width: 80%;
   }
 
   .home-red-img {
@@ -965,6 +964,10 @@ form {
 
   .home-top {
     justify-content: center;
+  }
+
+  .home-video-olga-wrap {
+    width: 80%;
   }
 
   .navbar-links a {
@@ -1059,8 +1062,16 @@ form {
     width: 60%;
   }
 
+  .home-poem {
+    width: 80%;
+  }
+
   .home-top {
     justify-content: center;
+  }
+
+  .home-video-olga-wrap {
+    width: 80%;
   }
 
   .logo-img {
@@ -1155,12 +1166,16 @@ form {
 
   .home-img {
     height: auto;
-    width: 100%;
+    width: 80%;
   }
 
   .home-new-movie {
     height: auto;
     width: 100%;
+  }
+
+  .home-poem {
+    width: 80%;
   }
 
   .home-red-img {
@@ -1170,6 +1185,10 @@ form {
 
   .home-top {
     justify-content: center;
+  }
+
+  .home-video-olga-wrap {
+    width: 80%;
   }
 
   .logo-img {
