@@ -12,16 +12,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="_styles/style.css" />
-    <script src="_scripts/script.js" defer></script>
-    <script src="_scripts/poems.js" defer></script>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/poems.js" defer></script>
   </head>
   <body>
     <header class="navbar" id="topNavbar">
       <div class="navbar-home">
         <a href="index.html"
           ><img
-            src="_assets/images/Olga-main2.jpg"
+            src="assets/images/Olga-main2.jpg"
             class="logo-img"
             alt="Olga Samolevskaya"
         /></a>
@@ -38,1241 +38,1217 @@
       <i class="fa-solid fa-bars toggle-btn"></i>
       <i class="fa-solid fa-close close-toggle-btn"></i>
     </header>
-    <div class="page-with-navbar">
-      <div class="poems">
-        <section class="sidebar-links">
-          <div class="poems-list-title">Зміст</div>
-          <div class="poems-list">
-            <a class="sidebar-link" href="#forest" onclick="poemPageMove()"
-              >В цей ліс я ходила роками</a
-            >
-            <a class="sidebar-link" href="#paska" onclick="poemPageMove()"
-              >Паска</a
-            >
-            <a class="sidebar-link" href="#theyarehere" onclick="poemPageMove()"
-              >Їхтам єсть</a
-            >
-            <a class="sidebar-link" href="#donina" onclick="poemPageMove()"
-              >Донiна Ялинка</a
-            >
-            <a class="sidebar-link" href="#look" onclick="poemPageMove()"
-              >Погляну на тремтяче віття</a
-            >
-            <a class="sidebar-link" href="#snowfall" onclick="poemPageMove()"
-              >Куди завгодно – тільки в снігопад!</a
-            >
-            <a class="sidebar-link" href="#tulips" onclick="poemPageMove()"
-              >Тюльпани ховаються в землю все глибше</a
-            >
-            <a class="sidebar-link" href="#cry" onclick="poemPageMove()"
-              >Крик</a
-            >
-            <a class="sidebar-link" href="#sky" onclick="poemPageMove()"
-              >Пестить нас небо веселе</a
-            >
-            <a class="sidebar-link" href="#drawing" onclick="poemPageMove()"
-              >Коли креслиш повітряні рами</a
-            >
-            <a class="sidebar-link" href="#chernobyl" onclick="poemPageMove()"
-              >Чорнобиль. Розпад</a
-            >
-            <a class="sidebar-link" href="#winter" onclick="poemPageMove()"
-              >Зимовi сутiнки</a
-            >
-            <a class="sidebar-link" href="#dance" onclick="poemPageMove()"
-              >Танок</a
-            >
-            <a class="sidebar-link" href="#sonmy" onclick="poemPageMove()"
-              >Арсенкові</a
-            >
-            <a class="sidebar-link" href="#freshness" onclick="poemPageMove()"
-              >І свіжість відчувається ранкова</a
-            >
-            <a class="sidebar-link" href="#rain" onclick="poemPageMove()"
-              >І я іду, і дощ іде</a
-            >
-            <a class="sidebar-link" href="#bodyfly" onclick="poemPageMove()"
-              >Тіло летіло, тремтіло, хотіло</a
-            >
-            <a class="sidebar-link" href="#myplace" onclick="poemPageMove()"
-              >А місто моє спить під зливами</a
-            >
-            <a class="sidebar-link" href="#myways" onclick="poemPageMove()"
-              >Шляхи мої, доріжки</a
-            >
-            <a class="sidebar-link" href="#howstrange" onclick="poemPageMove()"
-              >Як дивно - раптом дощик на мосту</a
-            >
+    <div class="poems">
+      <section class="sidebar-links">
+        <div class="poems-list-title">Зміст</div>
+        <div class="poems-list">
+          <a class="sidebar-link" href="#forest" onclick="poemPageMove()"
+            >В цей ліс я ходила роками</a
+          >
+          <a class="sidebar-link" href="#paska" onclick="poemPageMove()"
+            >Паска</a
+          >
+          <a class="sidebar-link" href="#theyarehere" onclick="poemPageMove()"
+            >Їхтам єсть</a
+          >
+          <a class="sidebar-link" href="#donina" onclick="poemPageMove()"
+            >Донiна Ялинка</a
+          >
+          <a class="sidebar-link" href="#look" onclick="poemPageMove()"
+            >Погляну на тремтяче віття</a
+          >
+          <a class="sidebar-link" href="#snowfall" onclick="poemPageMove()"
+            >Куди завгодно – тільки в снігопад!</a
+          >
+          <a class="sidebar-link" href="#tulips" onclick="poemPageMove()"
+            >Тюльпани ховаються в землю все глибше</a
+          >
+          <a class="sidebar-link" href="#cry" onclick="poemPageMove()">Крик</a>
+          <a class="sidebar-link" href="#sky" onclick="poemPageMove()"
+            >Пестить нас небо веселе</a
+          >
+          <a class="sidebar-link" href="#drawing" onclick="poemPageMove()"
+            >Коли креслиш повітряні рами</a
+          >
+          <a class="sidebar-link" href="#chernobyl" onclick="poemPageMove()"
+            >Чорнобиль. Розпад</a
+          >
+          <a class="sidebar-link" href="#winter" onclick="poemPageMove()"
+            >Зимовi сутiнки</a
+          >
+          <a class="sidebar-link" href="#dance" onclick="poemPageMove()"
+            >Танок</a
+          >
+          <a class="sidebar-link" href="#sonmy" onclick="poemPageMove()"
+            >Арсенкові</a
+          >
+          <a class="sidebar-link" href="#freshness" onclick="poemPageMove()"
+            >І свіжість відчувається ранкова</a
+          >
+          <a class="sidebar-link" href="#rain" onclick="poemPageMove()"
+            >І я іду, і дощ іде</a
+          >
+          <a class="sidebar-link" href="#bodyfly" onclick="poemPageMove()"
+            >Тіло летіло, тремтіло, хотіло</a
+          >
+          <a class="sidebar-link" href="#myplace" onclick="poemPageMove()"
+            >А місто моє спить під зливами</a
+          >
+          <a class="sidebar-link" href="#myways" onclick="poemPageMove()"
+            >Шляхи мої, доріжки</a
+          >
+          <a class="sidebar-link" href="#howstrange" onclick="poemPageMove()"
+            >Як дивно - раптом дощик на мосту</a
+          >
 
-            <a class="sidebar-link" href="#earth" onclick="poemPageMove()"
-              >А вісь земна тримається</a
-            >
-            <a class="sidebar-link" href="#thief" onclick="poemPageMove()"
-              >Найбільша злодійка – не смерть…</a
-            >
-            <a class="sidebar-link" href="#closedbook" onclick="poemPageMove()"
-              >Закрита книжка</a
-            >
-            <a class="sidebar-link" href="#donina" onclick="poemPageMove()"
-              >Донiна Ялинка</a
-            >
-            <a class="sidebar-link" href="#blocada" onclick="poemPageMove()"
-              >Блокада</a
-            >
-            <a class="sidebar-link" href="#swift" onclick="poemPageMove()"
-              >Відключіть окупантів не тільки від SWIFT</a
-            >
-            <a class="sidebar-link" href="#koli" onclick="poemPageMove()"
-              >Коли ми проривались на свободу</a
-            >
-            <a class="sidebar-link" href="#spring" onclick="poemPageMove()"
-              >Не прощаюся з весною</a
-            >
-            <a
-              class="sidebar-link"
-              href="#birdsflewaway"
-              onclick="poemPageMove()"
-              >Порозліталось від війни пташок чимало</a
-            >
-            <a class="sidebar-link" href="#svo" onclick="poemPageMove()">СВО</a>
-            <a class="sidebar-link" href="#dam" onclick="poemPageMove()"
-              >Дамба</a
-            >
+          <a class="sidebar-link" href="#earth" onclick="poemPageMove()"
+            >А вісь земна тримається</a
+          >
+          <a class="sidebar-link" href="#thief" onclick="poemPageMove()"
+            >Найбільша злодійка – не смерть…</a
+          >
+          <a class="sidebar-link" href="#closedbook" onclick="poemPageMove()"
+            >Закрита книжка</a
+          >
+          <a class="sidebar-link" href="#donina" onclick="poemPageMove()"
+            >Донiна Ялинка</a
+          >
+          <a class="sidebar-link" href="#blocada" onclick="poemPageMove()"
+            >Блокада</a
+          >
+          <a class="sidebar-link" href="#swift" onclick="poemPageMove()"
+            >Відключіть окупантів не тільки від SWIFT</a
+          >
+          <a class="sidebar-link" href="#koli" onclick="poemPageMove()"
+            >Коли ми проривались на свободу</a
+          >
+          <a class="sidebar-link" href="#spring" onclick="poemPageMove()"
+            >Не прощаюся з весною</a
+          >
+          <a class="sidebar-link" href="#birdsflewaway" onclick="poemPageMove()"
+            >Порозліталось від війни пташок чимало</a
+          >
+          <a class="sidebar-link" href="#svo" onclick="poemPageMove()">СВО</a>
+          <a class="sidebar-link" href="#dam" onclick="poemPageMove()">Дамба</a>
 
-            <a class="sidebar-link" href="#war" onclick="poemPageMove()"
-              >Вiйна</a
-            >
-            <a class="sidebar-link" href="#cathedral" onclick="poemPageMove()"
-              >Собор</a
-            >
-            <a class="sidebar-link" href="#gray" onclick="poemPageMove()"
-              >Сивi волошки</a
-            >
-            <a
-              class="sidebar-link"
-              href="#suddenlystop"
-              onclick="poemPageMove()"
-              >Раптом зупинишся серед столичного галасу</a
-            >
-            <a class="sidebar-link" href="#illya" onclick="poemPageMove()"
-              >Пам'яті Іллі Чернілевського</a
-            >
-            <a
-              class="sidebar-link"
-              href="#generoustree"
-              onclick="poemPageMove()"
-              >О, наше щедре дерево – шовковице!</a
-            >
-            <a class="sidebar-link" href="#soul" onclick="poemPageMove()"
-              >Душа</a
-            >
-          </div>
-        </section>
-        <section class="sidebar-btn">
-          <i
-            class="fa-solid fa-angle-right btn-icon"
-            onClick="moveSidebar()"
-          ></i>
-        </section>
-        <section class="poems-section">
-          <div class="card-poems cards" id="forest">
-            <div class="card-poem">
-              <div class="poems-title">* * *</div>
-              <div class="card-poem-text">
-                В цей ліс я ходила роками – <br />
-                втішав мене років з п'яти, <br />
-                й не можна до нього не йти – <br />
-                він оберігав юність мами. <br />
+          <a class="sidebar-link" href="#war" onclick="poemPageMove()">Вiйна</a>
+          <a class="sidebar-link" href="#cathedral" onclick="poemPageMove()"
+            >Собор</a
+          >
+          <a class="sidebar-link" href="#gray" onclick="poemPageMove()"
+            >Сивi волошки</a
+          >
+          <a class="sidebar-link" href="#suddenlystop" onclick="poemPageMove()"
+            >Раптом зупинишся серед столичного галасу</a
+          >
+          <a class="sidebar-link" href="#illya" onclick="poemPageMove()"
+            >Пам'яті Іллі Чернілевського</a
+          >
+          <a class="sidebar-link" href="#generoustree" onclick="poemPageMove()"
+            >О, наше щедре дерево – шовковице!</a
+          >
+          <a class="sidebar-link" href="#soul" onclick="poemPageMove()">Душа</a>
+        </div>
+      </section>
+      <section class="sidebar-btn">
+        <i class="fa-solid fa-angle-right btn-icon" onClick="moveSidebar()"></i>
+      </section>
+      <section class="poems-section">
+        <div class="card-poems cards" id="forest">
+          <div class="card-poem">
+            <div class="poems-title">* * *</div>
+            <div class="card-poem-text">
+              В цей ліс я ходила роками – <br />
+              втішав мене років з п'яти, <br />
+              й не можна до нього не йти – <br />
+              він оберігав юність мами. <br />
 
-                Чарівні тумани повзли, <br />
-                сосонка була ще дитятком. <br />
-                Ледь лапку її відхили – <br />
-                під нею сміялись маслятка! <br />
+              Чарівні тумани повзли, <br />
+              сосонка була ще дитятком. <br />
+              Ледь лапку її відхили – <br />
+              під нею сміялись маслятка! <br />
 
-                …На ній, корабельній сосні, <br />
-                пташина така терпелива! <br />
-                Як двієчнику, мені <br />
-                повторює фразу тремтливу. <br />
+              …На ній, корабельній сосні, <br />
+              пташина така терпелива! <br />
+              Як двієчнику, мені <br />
+              повторює фразу тремтливу. <br />
 
-                А я і не втямлю одразу: <br />
-                чи то є музична фраза, <br />
-                чи то настанова мені – <br />
-                як вижити у війні. <br />
+              А я і не втямлю одразу: <br />
+              чи то є музична фраза, <br />
+              чи то настанова мені – <br />
+              як вижити у війні. <br />
 
-                Що сталося з лісом і з нами? <br />
-                Тремтить замінований ліс. <br />
-                А поміж дубів та беріз – <br />
-                світленькі траншеї , як шрами. <br />
+              Що сталося з лісом і з нами? <br />
+              Тремтить замінований ліс. <br />
+              А поміж дубів та беріз – <br />
+              світленькі траншеї , як шрами. <br />
 
-                Мої вороги-лиходії <br />
-                навряд чи сказати зуміють, <br />
-                чого вони пруться в наш ліс! <br />
-                Для них не було тут ні свята, <br />
-                ані картоплини з багаття, <br />
-                ні сміху, <br />
-                ні смутку, <br />
-                ні сліз… <br />
-              </div>
+              Мої вороги-лиходії <br />
+              навряд чи сказати зуміють, <br />
+              чого вони пруться в наш ліс! <br />
+              Для них не було тут ні свята, <br />
+              ані картоплини з багаття, <br />
+              ні сміху, <br />
+              ні смутку, <br />
+              ні сліз… <br />
             </div>
           </div>
-          <div class="card-poems cards" id="paska">
-            <div class="card-poem">
-              <div class="poems-title">Паска</div>
-              <div class="card-poem-text">
-                Ось хата на лінії бою. <br />
-                Не біла вже, як печериця. <br />
-                А чорна, неначе вдовиця, <br />
-                яка обручилась з журбою. <br />
+        </div>
+        <div class="card-poems cards" id="paska">
+          <div class="card-poem">
+            <div class="poems-title">Паска</div>
+            <div class="card-poem-text">
+              Ось хата на лінії бою. <br />
+              Не біла вже, як печериця. <br />
+              А чорна, неначе вдовиця, <br />
+              яка обручилась з журбою. <br />
 
-                Ось хата на лінії болю. <br />
+              Ось хата на лінії болю. <br />
 
-                Усе, що було тут ошатним <br />
-                спалило залізо закляте, <br />
-                забрало назавжди з собою <br />
-                усіх, ким пишалася хата, <br />
-                усе, чим була так багата, <br />
-                до чого торкалися руки – <br />
-                свій затишок і свої звуки, <br />
-                надії на весну і свято… <br />
+              Усе, що було тут ошатним <br />
+              спалило залізо закляте, <br />
+              забрало назавжди з собою <br />
+              усіх, ким пишалася хата, <br />
+              усе, чим була так багата, <br />
+              до чого торкалися руки – <br />
+              свій затишок і свої звуки, <br />
+              надії на весну і свято… <br />
 
-                Лиш комин стирчить винувато. <br />
+              Лиш комин стирчить винувато. <br />
 
-                То нелюди до Великодня <br />
-                порушили тишу Господню. <br />
+              То нелюди до Великодня <br />
+              порушили тишу Господню. <br />
 
-                Ось паска у спаленій хаті. <br />
-                Обвуглена, як Україна, <br />
-                яку оточили солдати. <br />
+              Ось паска у спаленій хаті. <br />
+              Обвуглена, як Україна, <br />
+              яку оточили солдати. <br />
 
-                Та свіжа із середини!<br />
-              </div>
+              Та свіжа із середини!<br />
             </div>
           </div>
-          <div class="card-poems cards" id="theyarehere">
-            <div class="card-poem">
-              <div class="poems-title">Їхтам єсть</div>
-              <div class="card-poem-text">
-                Їх призивали до наступу. <br />
-                Не в могили. <br />
-                Голови юні отемнили і поголили… <br />
-                Попелом стали <br />
-                вчорашні школярики мирні, <br />
-                щедро принесені в жертву нечуваним іграм. <br />
+        </div>
+        <div class="card-poems cards" id="theyarehere">
+          <div class="card-poem">
+            <div class="poems-title">Їхтам єсть</div>
+            <div class="card-poem-text">
+              Їх призивали до наступу. <br />
+              Не в могили. <br />
+              Голови юні отемнили і поголили… <br />
+              Попелом стали <br />
+              вчорашні школярики мирні, <br />
+              щедро принесені в жертву нечуваним іграм. <br />
 
-                Знову цілують рашистські знамена державні, <br />
-                знову до наступу сунуть в лихій круговерті <br />
-                гвинтики, <br />
-                вірні вождю і присязі безжальній, <br />
-                вкручені в плани досягнення горя і смерті. <br />
+              Знову цілують рашистські знамена державні, <br />
+              знову до наступу сунуть в лихій круговерті <br />
+              гвинтики, <br />
+              вірні вождю і присязі безжальній, <br />
+              вкручені в плани досягнення горя і смерті. <br />
 
-                Сипали їх, як стріли на Україну. <br />
-                Голови юні наповнили каламуттю. <br />
-                Тут вони стріли безславну останню годину. <br />
+              Сипали їх, як стріли на Україну. <br />
+              Голови юні наповнили каламуттю. <br />
+              Тут вони стріли безславну останню годину. <br />
 
-                Хто вони світові? <br />
-                Прокляті і забуті.<br />
-              </div>
+              Хто вони світові? <br />
+              Прокляті і забуті.<br />
             </div>
           </div>
+        </div>
 
-          <div class="card-poems cards" id="donina">
-            <div class="card-poem">
-              <div class="poems-title">Донiна Ялинка</div>
-              <div class="card-poem-text">
-                І <br />
-                Раптові короткі збори, <br />
-                поспішне тривожне прощання: <br />
-                – Побачимось скоро з тобою!.. <br />
-                А далі – колони за обрій, <br />
-                а далі – сирен завивання, <br />
-                а далі – суцільна непевність, <br />
-                що вибух не розведе нас, <br />
+        <div class="card-poems cards" id="donina">
+          <div class="card-poem">
+            <div class="poems-title">Донiна Ялинка</div>
+            <div class="card-poem-text">
+              І <br />
+              Раптові короткі збори, <br />
+              поспішне тривожне прощання: <br />
+              – Побачимось скоро з тобою!.. <br />
+              А далі – колони за обрій, <br />
+              а далі – сирен завивання, <br />
+              а далі – суцільна непевність, <br />
+              що вибух не розведе нас, <br />
 
-                і в небі – як жилки на скронях, <br />
-                сліди від смертельної зброї, <br />
-                неначе став зримим і явним <br />
-                над рідним будинком диявол. <br />
+              і в небі – як жилки на скронях, <br />
+              сліди від смертельної зброї, <br />
+              неначе став зримим і явним <br />
+              над рідним будинком диявол. <br />
 
-                Жорсткий божевільний лютий <br />
-                велів нам про спокій забути, <br />
-                хотів не впустити вЕсну, <br />
-                бажав, щоби крига не скресла. <br />
+              Жорсткий божевільний лютий <br />
+              велів нам про спокій забути, <br />
+              хотів не впустити вЕсну, <br />
+              бажав, щоби крига не скресла. <br />
 
-                Та зелень прорвала облогу, <br />
-                неначе вже мир, слава Богу. <br />
-                Черешня стоїть у короні, <br />
-                кульбабки в траві – як на троні. <br />
-                На них – форма хоч не військова, <br />
-                та витримка обов’язкова. <br />
-                Сміливчики безборонні – <br />
-                тюльпани відкрили обличчя, <br />
-                бузок намагається звично <br />
-                підставити сонечку грона… <br />
-                Усе це нездолане військо <br />
-                війні протидіяти вийшло. <br />
-                Шалено, відважно і вперто <br />
-                усе опирається смерті! <br />
-                У цьому є щось героїчне – <br />
-                усім напираючим роєм <br />
-                безслівним, дзвінким і беззбройним <br />
-                наважитись на протиріччя! <br />
-                Весна ароматами м’яти <br />
-                встає проти зайди-гармати, <br />
-                іде проти сірого танку <br />
-                в атаку, в атаку, в атаку! <br />
+              Та зелень прорвала облогу, <br />
+              неначе вже мир, слава Богу. <br />
+              Черешня стоїть у короні, <br />
+              кульбабки в траві – як на троні. <br />
+              На них – форма хоч не військова, <br />
+              та витримка обов’язкова. <br />
+              Сміливчики безборонні – <br />
+              тюльпани відкрили обличчя, <br />
+              бузок намагається звично <br />
+              підставити сонечку грона… <br />
+              Усе це нездолане військо <br />
+              війні протидіяти вийшло. <br />
+              Шалено, відважно і вперто <br />
+              усе опирається смерті! <br />
+              У цьому є щось героїчне – <br />
+              усім напираючим роєм <br />
+              безслівним, дзвінким і беззбройним <br />
+              наважитись на протиріччя! <br />
+              Весна ароматами м’яти <br />
+              встає проти зайди-гармати, <br />
+              іде проти сірого танку <br />
+              в атаку, в атаку, в атаку! <br />
 
-                …В кутку нежилої кімнати <br />
-                ялинка блищить новорічна, <br />
-                то спогад про мир, і про свято… <br />
+              …В кутку нежилої кімнати <br />
+              ялинка блищить новорічна, <br />
+              то спогад про мир, і про свято… <br />
 
-                Як складені разом долоні, <br />
-                ялинка чекає на доню, <br />
-                бо та прикрашала це віття. <br />
+              Як складені разом долоні, <br />
+              ялинка чекає на доню, <br />
+              бо та прикрашала це віття. <br />
 
-                Ялинка ще мирна. Цивільна.. <br />
+              Ялинка ще мирна. Цивільна.. <br />
 
-                ІІ. <br />
-                Лютий розбив і мости, і дороги, <br />
-                поруйнував і будівлі, і долі, <br />
-                хижо заслав до нас орків безрогих – <br />
-                вершників смерті, розлуки і болю, <br />
-                тих, що хотіли пройтись тут парадом… <br />
+              ІІ. <br />
+              Лютий розбив і мости, і дороги, <br />
+              поруйнував і будівлі, і долі, <br />
+              хижо заслав до нас орків безрогих – <br />
+              вершників смерті, розлуки і болю, <br />
+              тих, що хотіли пройтись тут парадом… <br />
 
-                Наша ялинка чекає на Ладу, <br />
-                як Україна – на перемогу. <br />
-                Віримо в воїнів наших, як в Бога <br />
-              </div>
+              Наша ялинка чекає на Ладу, <br />
+              як Україна – на перемогу. <br />
+              Віримо в воїнів наших, як в Бога <br />
             </div>
           </div>
-          <div class="card-poems cards" id="look">
-            <div class="card-poem">
-              <div class="poems-title">Погляну на тремтяче віття</div>
-              <div class="card-poem-text">
-                "Погляну" на тремтяче віття – <br />
-                і точно душу щось кольне. <br />
-                Бринить, залишена у світі <br />
-                та фраза: "Зрадиш ти мене!.." <br />
+        </div>
+        <div class="card-poems cards" id="look">
+          <div class="card-poem">
+            <div class="poems-title">Погляну на тремтяче віття</div>
+            <div class="card-poem-text">
+              "Погляну" на тремтяче віття – <br />
+              і точно душу щось кольне. <br />
+              Бринить, залишена у світі <br />
+              та фраза: "Зрадиш ти мене!.." <br />
 
-                А гілка царственого дуба <br />
-                вогкими віями здригне, <br />
-                почувши кроки лісоруба, <br />
-                і мовить: "Ти продаш мене!.." <br />
+              А гілка царственого дуба <br />
+              вогкими віями здригне, <br />
+              почувши кроки лісоруба, <br />
+              і мовить: "Ти продаш мене!.." <br />
 
-                Промінчик у вікні вагону <br />
-                раптово лезом полосне, <br />
-                й підкотить муку ту знайому – <br />
-                як легко зрадив ти мене! <br />
-              </div>
+              Промінчик у вікні вагону <br />
+              раптово лезом полосне, <br />
+              й підкотить муку ту знайому – <br />
+              як легко зрадив ти мене! <br />
             </div>
           </div>
-          <div class="card-poems cards" id="snowfall">
-            <div class="card-poem">
-              <div class="poems-title">Куди завгодно – тільки в снігопад!</div>
-              <div class="card-poem-text">
-                Куди завгодно – тільки в снігопад! <br />
-                Хай в ніч, у холод, в танці хуртовини! <br />
-                Летять, летять секундочки невпинні, <br />
-                летять, не повертаючись назад. <br />
-                Мої сніжинки, поштарі родинні – <br />
-                від мами вість несуть в притихлий сад. <br />
+        </div>
+        <div class="card-poems cards" id="snowfall">
+          <div class="card-poem">
+            <div class="poems-title">Куди завгодно – тільки в снігопад!</div>
+            <div class="card-poem-text">
+              Куди завгодно – тільки в снігопад! <br />
+              Хай в ніч, у холод, в танці хуртовини! <br />
+              Летять, летять секундочки невпинні, <br />
+              летять, не повертаючись назад. <br />
+              Мої сніжинки, поштарі родинні – <br />
+              від мами вість несуть в притихлий сад. <br />
 
-                Вдивляюся в тонесеньку різьбу – <br />
-                так ми колись з паперу вирізали… <br />
-                Безмовний снігопад – про нас сказання, <br />
-                про новорічне чудо й про журбу… <br />
-                Усе, що ми не встигли й не сказали, <br />
-                сніги вплели в холодну ворожбу. <br />
-              </div>
+              Вдивляюся в тонесеньку різьбу – <br />
+              так ми колись з паперу вирізали… <br />
+              Безмовний снігопад – про нас сказання, <br />
+              про новорічне чудо й про журбу… <br />
+              Усе, що ми не встигли й не сказали, <br />
+              сніги вплели в холодну ворожбу. <br />
             </div>
           </div>
-          <div class="card-poems cards" id="tulips">
-            <div class="card-poem">
-              <div class="poems-title">
-                Тюльпани ховаються в землю все глибше
-              </div>
-              <div class="card-poem-text">
-                Тюльпани ховаються в землю все глибше, <br />
-                щоб люди лихі не змогли їх вкопати. <br />
+        </div>
+        <div class="card-poems cards" id="tulips">
+          <div class="card-poem">
+            <div class="poems-title">Тюльпани ховаються в землю все глибше</div>
+            <div class="card-poem-text">
+              Тюльпани ховаються в землю все глибше, <br />
+              щоб люди лихі не змогли їх вкопати. <br />
 
-                Весною пробились з глибокої тиші – <br />
-                а люди воюють. Руїни від хати… <br />
+              Весною пробились з глибокої тиші – <br />
+              а люди воюють. Руїни від хати… <br />
 
-                Тягнулись тюльпани між склом і камінням, <br />
-                щоб знову людей із весною вітати. <br />
-                Розквітли й раділи незмінно, невпинно, <br />
-                немов їх побачать ті діти, та мати… <br />
+              Тягнулись тюльпани між склом і камінням, <br />
+              щоб знову людей із весною вітати. <br />
+              Розквітли й раділи незмінно, невпинно, <br />
+              немов їх побачать ті діти, та мати… <br />
 
-                А діти у тиші глибокій зостались, <br />
-                і більше не мають ні росту, ні віку… <br />
-                З тюльпанами місцем вони помінялись. <br />
-                Весна не покличе їх вийти до світу. <br />
+              А діти у тиші глибокій зостались, <br />
+              і більше не мають ні росту, ні віку… <br />
+              З тюльпанами місцем вони помінялись. <br />
+              Весна не покличе їх вийти до світу. <br />
 
-                Зелено-червоним розквітлим контрастом <br />
-                тюльпани продовжили пісню про щастя. <br />
-                Військовим здавалось – в руїнах тих знову <br />
-                з'явилися плями від свіжої крови… <br />
+              Зелено-червоним розквітлим контрастом <br />
+              тюльпани продовжили пісню про щастя. <br />
+              Військовим здавалось – в руїнах тих знову <br />
+              з'явилися плями від свіжої крови… <br />
 
-                … Бутони, які ту війну не здолали, <br />
-                ніколи вже не розцвітуть під зорею. <br />
-                Та кожної вЕсни з могили своєї <br />
-                ті білі стеблини повзуть під завалом. <br />
-              </div>
+              … Бутони, які ту війну не здолали, <br />
+              ніколи вже не розцвітуть під зорею. <br />
+              Та кожної вЕсни з могили своєї <br />
+              ті білі стеблини повзуть під завалом. <br />
             </div>
           </div>
-          <div class="card-poems cards" id="cry">
-            <div class="card-poem">
-              <div class="poems-title">Крик</div>
-              <div class="card-poem-text">
-                Тихі села. Та чим провинилися, <br />
-                що отак звуки всі провалилися? <br />
-                Розквітаючий впевнений ранок <br />
-                абсолютною тишею ранить. <br />
+        </div>
+        <div class="card-poems cards" id="cry">
+          <div class="card-poem">
+            <div class="poems-title">Крик</div>
+            <div class="card-poem-text">
+              Тихі села. Та чим провинилися, <br />
+              що отак звуки всі провалилися? <br />
+              Розквітаючий впевнений ранок <br />
+              абсолютною тишею ранить. <br />
 
-                Тихі села. Хати всі незамкнені – <br />
-                так у вбитих руки розімкнені, <br />
-                так у вбитих жах незагоєний. <br />
-                Крик до неба. <br />
-                Та що ж це накоєно? <br />
-              </div>
+              Тихі села. Хати всі незамкнені – <br />
+              так у вбитих руки розімкнені, <br />
+              так у вбитих жах незагоєний. <br />
+              Крик до неба. <br />
+              Та що ж це накоєно? <br />
             </div>
           </div>
-          <div class="card-poems cards" id="sky">
-            <div class="card-poem">
-              <div class="poems-title">Пестить нас небо веселе</div>
-              <div class="card-poem-text">
-                Пестить нас небо веселе – <br />
-                зливу спіткали ми в полі! <br />
-                Щастя нам влучило в долю, <br />
-                наче веселка – в оселю! <br />
-                Фотографує нас блискавка! <br />
-                Прагне з тим фото пограти <br />
-                й нашим батькам передати <br />
-                в ирій хорошу звістку, <br />
-                що серед теплої зливи <br />
-                є ми – в обіймах щасливих. <br />
+        </div>
+        <div class="card-poems cards" id="sky">
+          <div class="card-poem">
+            <div class="poems-title">Пестить нас небо веселе</div>
+            <div class="card-poem-text">
+              Пестить нас небо веселе – <br />
+              зливу спіткали ми в полі! <br />
+              Щастя нам влучило в долю, <br />
+              наче веселка – в оселю! <br />
+              Фотографує нас блискавка! <br />
+              Прагне з тим фото пограти <br />
+              й нашим батькам передати <br />
+              в ирій хорошу звістку, <br />
+              що серед теплої зливи <br />
+              є ми – в обіймах щасливих. <br />
 
-                Фотографине-блискавко! <br />
-                Хоч на хвилинку висвіти, <br />
-                як же отримати звістку нам <br />
-                можна з безодні імлистої?.. <br />
-                Без отієї розмови щастя не буде повним. <br />
-              </div>
+              Фотографине-блискавко! <br />
+              Хоч на хвилинку висвіти, <br />
+              як же отримати звістку нам <br />
+              можна з безодні імлистої?.. <br />
+              Без отієї розмови щастя не буде повним. <br />
             </div>
           </div>
-          <div class="card-poems cards" id="drawing">
-            <div class="card-poem">
-              <div class="poems-title">Коли креслиш повітряні рами</div>
-              <div class="card-poem-text">
-                Коли креслиш повітряні рами – <br />
-                я неначе окреслена щастям! <br />
-                Ти повітряні пишеш портрети <br />
-                у дворі, під дощем, біля храму, <br />
-                у саду біля квітів прекрасних, <br />
-                в стилі фольк, в стилі блюз, або ретро… <br />
+        </div>
+        <div class="card-poems cards" id="drawing">
+          <div class="card-poem">
+            <div class="poems-title">Коли креслиш повітряні рами</div>
+            <div class="card-poem-text">
+              Коли креслиш повітряні рами – <br />
+              я неначе окреслена щастям! <br />
+              Ти повітряні пишеш портрети <br />
+              у дворі, під дощем, біля храму, <br />
+              у саду біля квітів прекрасних, <br />
+              в стилі фольк, в стилі блюз, або ретро… <br />
 
-                Тим портретам вигадуєш назви: <br />
-                "Незнайомка", "Трактирниця з вазою" <br />
+              Тим портретам вигадуєш назви: <br />
+              "Незнайомка", "Трактирниця з вазою" <br />
 
-                "Ти у мене єдина така є", <br />
-                "Вишивальниця", "Ранок Господній" <br />
-                Ми сміємося!.. <br />
-                Та виникає – <br />
-                як вітрильник з морської безодні, – <br />
-                провінційний музей, і картина <br />
-                дуже давня, як давня Тортила. <br />
+              "Ти у мене єдина така є", <br />
+              "Вишивальниця", "Ранок Господній" <br />
+              Ми сміємося!.. <br />
+              Та виникає – <br />
+              як вітрильник з морської безодні, – <br />
+              провінційний музей, і картина <br />
+              дуже давня, як давня Тортила. <br />
 
-                Позолота обсипана з рами, <br />
-                лик жіночий з'являється з тіні, <br />
-                з кракелюрового павутиння, <br />
-                як збережена кардіограма <br />
-                незабутнього рідного дому. <br />
-                Невідомий. "Портрет невідомої. <br />
-              </div>
+              Позолота обсипана з рами, <br />
+              лик жіночий з'являється з тіні, <br />
+              з кракелюрового павутиння, <br />
+              як збережена кардіограма <br />
+              незабутнього рідного дому. <br />
+              Невідомий. "Портрет невідомої. <br />
             </div>
           </div>
-          <div class="card-poems cards" id="chernobyl">
-            <div class="card-poem">
-              <div class="poems-title">Чорнобиль. Розпад</div>
-              <div class="card-poem-text">
-                А відстань затягує зяючі рани – <br />
-                так, це вже підсохлі загоєні ранки. <br />
-                Та з вікон покинутих, наче з екранів, <br />
-                знов сходять у хату нічийні світанки <br />
-                і бачать розкидані сироти-речі, <br />
-                які так старались – для сну, для обіду… <br />
-                Й дитяче пальто, й черевик інваліда… <br />
-                У хаті, як в серці, живе порожнеча. <br />
+        </div>
+        <div class="card-poems cards" id="chernobyl">
+          <div class="card-poem">
+            <div class="poems-title">Чорнобиль. Розпад</div>
+            <div class="card-poem-text">
+              А відстань затягує зяючі рани – <br />
+              так, це вже підсохлі загоєні ранки. <br />
+              Та з вікон покинутих, наче з екранів, <br />
+              знов сходять у хату нічийні світанки <br />
+              і бачать розкидані сироти-речі, <br />
+              які так старались – для сну, для обіду… <br />
+              Й дитяче пальто, й черевик інваліда… <br />
+              У хаті, як в серці, живе порожнеча. <br />
 
-                Забуте, з далекого чорного року <br />
-                гойдається дрантя, брудне і промокле, <br />
-                підсвічене ніжністю щемного ранку. <br />
-                Колись воно звалось красиво: фіранка… <br />
+              Забуте, з далекого чорного року <br />
+              гойдається дрантя, брудне і промокле, <br />
+              підсвічене ніжністю щемного ранку. <br />
+              Колись воно звалось красиво: фіранка… <br />
 
-                Солдат чорно-білий. Забутий. У рамі. <br />
-                Колись захистив ти цю землю та рідних. <br />
-                І з неба являються тато і мама. <br />
-                А людям обличчя твоє не потрібно. <br />
-                Воно і під допитом людям не видасть, <br />
-                як затишно в хаті і в світі жилося, <br />
-                а потім – присяга, атака, сміливість… <br />
-                …Пронизливий погляд. Русяве волосся. <br />
-              </div>
+              Солдат чорно-білий. Забутий. У рамі. <br />
+              Колись захистив ти цю землю та рідних. <br />
+              І з неба являються тато і мама. <br />
+              А людям обличчя твоє не потрібно. <br />
+              Воно і під допитом людям не видасть, <br />
+              як затишно в хаті і в світі жилося, <br />
+              а потім – присяга, атака, сміливість… <br />
+              …Пронизливий погляд. Русяве волосся. <br />
             </div>
           </div>
-          <div class="card-poems cards" id="winter">
-            <div class="card-poem">
-              <div class="poems-title">Зимовi сутiнки</div>
-              <div class="card-poem-text">
-                …а морок всевладний, як сон цей, <br />
-                він так розпластав чорні віти, <br />
-                неначе не визирне й сонце <br />
-                за зло, яке множиться в світі. <br />
+        </div>
+        <div class="card-poems cards" id="winter">
+          <div class="card-poem">
+            <div class="poems-title">Зимовi сутiнки</div>
+            <div class="card-poem-text">
+              …а морок всевладний, як сон цей, <br />
+              він так розпластав чорні віти, <br />
+              неначе не визирне й сонце <br />
+              за зло, яке множиться в світі. <br />
 
-                Та ранок пітьму пересилив! <br />
-                Ось так би під небом стояти <br />
-                і всотувати це свято – <br />
-                пробудження небосхилу… <br />
+              Та ранок пітьму пересилив! <br />
+              Ось так би під небом стояти <br />
+              і всотувати це свято – <br />
+              пробудження небосхилу… <br />
 
-                …Та знову ту сяючу ніжність, <br />
-                підсилену відблиском сніжним, <br />
-                насуплений демон стирає <br />
-                зі стомленого небокраю. <br />
+              …Та знову ту сяючу ніжність, <br />
+              підсилену відблиском сніжним, <br />
+              насуплений демон стирає <br />
+              зі стомленого небокраю. <br />
 
-                Я знов не встигаю на сутінки, <br />
-                і знову лишаюсь у відчаї – <br />
-                магічний стрімкий рисунок <br />
-                й сьогодні втрачаю двічі. <br />
+              Я знов не встигаю на сутінки, <br />
+              і знову лишаюсь у відчаї – <br />
+              магічний стрімкий рисунок <br />
+              й сьогодні втрачаю двічі. <br />
 
-                А темрява суне все дужче <br />
-                і цілить в розхристану душу. <br />
-                Нестримно і стрімко стемніло. <br />
-                І серце моє оніміло. <br />
-              </div>
+              А темрява суне все дужче <br />
+              і цілить в розхристану душу. <br />
+              Нестримно і стрімко стемніло. <br />
+              І серце моє оніміло. <br />
             </div>
           </div>
-          <div class="card-poems cards" id="dance">
-            <div class="card-poem">
-              <div class="poems-title">Танок</div>
-              <div class="card-poem-text">
-                Нічний кошлатий сніг до вальсу кличе, <br />
-                куди не поверну – летить в обличчя. <br />
-                Неначе знає, як тут жити складно, <br />
-                немов підняти у безодню ладен. <br />
-                Тріпоче міріадами зірок, <br />
-                підхоплюючи в мовчазний танок. <br />
+        </div>
+        <div class="card-poems cards" id="dance">
+          <div class="card-poem">
+            <div class="poems-title">Танок</div>
+            <div class="card-poem-text">
+              Нічний кошлатий сніг до вальсу кличе, <br />
+              куди не поверну – летить в обличчя. <br />
+              Неначе знає, як тут жити складно, <br />
+              немов підняти у безодню ладен. <br />
+              Тріпоче міріадами зірок, <br />
+              підхоплюючи в мовчазний танок. <br />
 
-                І раптом – легко! <br />
-                В цьому танці тану, <br />
-                досадоньку долаю невблаганну. <br />
+              І раптом – легко! <br />
+              В цьому танці тану, <br />
+              досадоньку долаю невблаганну. <br />
 
-                Посеред ночі сипле білий цвіт, <br />
-                бинтує весь заснулий білий світ. <br />
+              Посеред ночі сипле білий цвіт, <br />
+              бинтує весь заснулий білий світ. <br />
 
-                Жива істота – цей веселий сніг! <br />
-                Він так тактовно стримує мій біг! <br />
-                Він ладен заміщати сум на сміх, <br />
-                він ладен цілувати всіх, <br />
-                всіх, <br />
-                всіх! <br />
-              </div>
+              Жива істота – цей веселий сніг! <br />
+              Він так тактовно стримує мій біг! <br />
+              Він ладен заміщати сум на сміх, <br />
+              він ладен цілувати всіх, <br />
+              всіх, <br />
+              всіх! <br />
             </div>
           </div>
-          <div class="card-poems cards" id="sonmy">
-            <div class="card-poem">
-              <div class="poems-title">Арсенкові</div>
-              <div class="card-poem-text">
-                Син мій летить над рікою. <br />
-                На мості – пунктиром – машини… <br />
-                Як континенти – ті плями, котрі залишила зима… <br />
-                Жвава абстракція в чорній воді – так несуться крижини… <br />
+        </div>
+        <div class="card-poems cards" id="sonmy">
+          <div class="card-poem">
+            <div class="poems-title">Арсенкові</div>
+            <div class="card-poem-text">
+              Син мій летить над рікою. <br />
+              На мості – пунктиром – машини… <br />
+              Як континенти – ті плями, котрі залишила зима… <br />
+              Жвава абстракція в чорній воді – так несуться крижини… <br />
 
-                Син, зачарований світом, летить між часами двома – <br />
-                я була теж в цій купелі небесній… І міста вершини <br />
-                так піді мною пливли й мерехтіли вогнями всіма, <br />
-                в танучий отвір небесний тягнулись-штовхались крижини… <br />
+              Син, зачарований світом, летить між часами двома – <br />
+              я була теж в цій купелі небесній… І міста вершини <br />
+              так піді мною пливли й мерехтіли вогнями всіма, <br />
+              в танучий отвір небесний тягнулись-штовхались крижини… <br />
 
-                Світ, цей величний оркестр, де не завжди усе й не дарма… <br />
+              Світ, цей величний оркестр, де не завжди усе й не дарма… <br />
 
-                Світ не буває порожнім – буває в душі порожнина – <br />
-                в гомоні все, як завжди, тільки мами моєї нема… <br />
-              </div>
+              Світ не буває порожнім – буває в душі порожнина – <br />
+              в гомоні все, як завжди, тільки мами моєї нема… <br />
             </div>
           </div>
-          <div class="card-poems cards" id="freshness">
-            <div class="card-poem">
-              <div class="poems-title">* * *</div>
-              <div class="card-poem-text">
-                І свіжість відчувається ранкова, <br />
-                і вабить, тішить тиша вечорова, <br />
-                і ніч мене гойдає колисково, <br />
-                коли мовчить спокійна совість знову. <br />
+        </div>
+        <div class="card-poems cards" id="freshness">
+          <div class="card-poem">
+            <div class="poems-title">* * *</div>
+            <div class="card-poem-text">
+              І свіжість відчувається ранкова, <br />
+              і вабить, тішить тиша вечорова, <br />
+              і ніч мене гойдає колисково, <br />
+              коли мовчить спокійна совість знову. <br />
 
-                Хоч совість - річ ну зовсім не ринкова, <br />
-                та для душі - насправді прибуткова. <br />
-                Прасує. І звільняє від химерних пут. <br />
-                Й така надійна, як десантний парашут. <br />
-              </div>
+              Хоч совість - річ ну зовсім не ринкова, <br />
+              та для душі - насправді прибуткова. <br />
+              Прасує. І звільняє від химерних пут. <br />
+              Й така надійна, як десантний парашут. <br />
             </div>
           </div>
-          <div class="card-poems cards" id="rain">
-            <div class="card-poem">
-              <div class="poems-title">* * *</div>
-              <div class="card-poem-text">
-                І я іду, і дощ іде, <br />
-                ми з ним йдемо по місту Пярну. <br />
-                Мій Боже, як на світі гарно! <br />
-                Краса – кругом , людей – ніде! <br />
+        </div>
+        <div class="card-poems cards" id="rain">
+          <div class="card-poem">
+            <div class="poems-title">* * *</div>
+            <div class="card-poem-text">
+              І я іду, і дощ іде, <br />
+              ми з ним йдемо по місту Пярну. <br />
+              Мій Боже, як на світі гарно! <br />
+              Краса – кругом , людей – ніде! <br />
 
-                Чекають всі, щоб дощ пройшов. <br />
-                А щодо мене – то байдуже. <br />
-                Та дощ тим часом дужче, дужче! <br />
-                Асфальт блищить, неначе шовк. <br />
+              Чекають всі, щоб дощ пройшов. <br />
+              А щодо мене – то байдуже. <br />
+              Та дощ тим часом дужче, дужче! <br />
+              Асфальт блищить, неначе шовк. <br />
 
-                Куди дорога приведе <br />
-                не знаю, бо не знаю міста. <br />
-                Тут вабить все в дощі іскристім, <br />
-                тут все – веселе й молоде! <br />
+              Куди дорога приведе <br />
+              не знаю, бо не знаю міста. <br />
+              Тут вабить все в дощі іскристім, <br />
+              тут все – веселе й молоде! <br />
 
-                Кущі насичені дощем <br />
-                і сяйво в листі заховалось. <br />
-                Ось дощ проходить – так здавалось – <br />
-                а він розгулюється ще! <br />
+              Кущі насичені дощем <br />
+              і сяйво в листі заховалось. <br />
+              Ось дощ проходить – так здавалось – <br />
+              а він розгулюється ще! <br />
 
-                Це скринька щастя – місто Пярну! <br />
-                Тут сяє все, хоч зверху – хмарно, <br />
-                тут навіть море кольорове. <br />
-                Та я пройшла. Дощ прийде знову. <br />
-              </div>
+              Це скринька щастя – місто Пярну! <br />
+              Тут сяє все, хоч зверху – хмарно, <br />
+              тут навіть море кольорове. <br />
+              Та я пройшла. Дощ прийде знову. <br />
             </div>
           </div>
-          <div class="card-poems cards" id="bodyfly">
-            <div class="card-poem">
-              <div class="poems-title">* * *</div>
-              <div class="card-poem-text">
-                Тіло летіло, тремтіло, хотіло, <br />
-                і вимагало прикрас і обнов. <br />
-                Гоїло рани душевні всеціло. <br />
-                І помножало. І вабило знов. <br />
+        </div>
+        <div class="card-poems cards" id="bodyfly">
+          <div class="card-poem">
+            <div class="poems-title">* * *</div>
+            <div class="card-poem-text">
+              Тіло летіло, тремтіло, хотіло, <br />
+              і вимагало прикрас і обнов. <br />
+              Гоїло рани душевні всеціло. <br />
+              І помножало. І вабило знов. <br />
 
-                Храм, і сезам, і альков, і арена --- <br />
-                тіло для духу --- досади приймач. <br />
-                Тіло вгамовую, та все даремно. <br />
-                Тіло жалію й приховую плач. <br />
+              Храм, і сезам, і альков, і арена --- <br />
+              тіло для духу --- досади приймач. <br />
+              Тіло вгамовую, та все даремно. <br />
+              Тіло жалію й приховую плач. <br />
 
-                Плач  за тілами, що в русі невпиннім <br />
-                бавились, вабились, грілись колись --- <br />
-                та у землі розчинились, як піна... <br />
-                Плач за тілами. <br />
-                За душі молись. <br />
-              </div>
+              Плач  за тілами, що в русі невпиннім <br />
+              бавились, вабились, грілись колись --- <br />
+              та у землі розчинились, як піна... <br />
+              Плач за тілами. <br />
+              За душі молись. <br />
             </div>
           </div>
-          <div class="card-poems cards" id="myplace">
-            <div class="card-poem">
-              <div class="poems-title">* * *</div>
-              <div class="card-poem-text">
-                А місто моє спить під зливами <br />
-                і мріями сонно-щасливими… <br />
-                …Так просто мене забули ви, <br />
-                кохані, що зараз із любими. <br />
+        </div>
+        <div class="card-poems cards" id="myplace">
+          <div class="card-poem">
+            <div class="poems-title">* * *</div>
+            <div class="card-poem-text">
+              А місто моє спить під зливами <br />
+              і мріями сонно-щасливими… <br />
+              …Так просто мене забули ви, <br />
+              кохані, що зараз із любими. <br />
 
-                Дерева наївно вкрили мене <br />
-                такими пестливими крилами, <br />
-                легкими обіймами втримують <br />
-                дерева – великі брати мої, <br />
-                гілками – розлогими венами, <br />
-                чи блискавками натхненними; <br />
-                в них риси ріки, ієрархії… <br />
+              Дерева наївно вкрили мене <br />
+              такими пестливими крилами, <br />
+              легкими обіймами втримують <br />
+              дерева – великі брати мої, <br />
+              гілками – розлогими венами, <br />
+              чи блискавками натхненними; <br />
+              в них риси ріки, ієрархії… <br />
 
-                Дерева, мої патріархи, <br />
-                шляхетні, тендітні, величні, <br />
-                вітчизну тримаєте звично ви. <br />
-                Під вами – на вічних пристанях <br />
-                без ліку війною висіяні, <br />
-                від світу усього заховані, <br />
-                забуті і недолюблені, <br />
-                спресовані, відпрацьовані, <br />
-                корінням гнучким приголублені… <br />
+              Дерева, мої патріархи, <br />
+              шляхетні, тендітні, величні, <br />
+              вітчизну тримаєте звично ви. <br />
+              Під вами – на вічних пристанях <br />
+              без ліку війною висіяні, <br />
+              від світу усього заховані, <br />
+              забуті і недолюблені, <br />
+              спресовані, відпрацьовані, <br />
+              корінням гнучким приголублені… <br />
 
-                …Дерева танцюють звивисто, <br />
-                і пальцями пробують простори. <br />
-                Так само втрачатиму листя я, <br />
-                і крону так само випростую. <br />
+              …Дерева танцюють звивисто, <br />
+              і пальцями пробують простори. <br />
+              Так само втрачатиму листя я, <br />
+              і крону так само випростую. <br />
 
-                Дерева, бриніть, випромінюйтесь! <br />
-                Допоки ще не спрямили нас, <br />
-                на нас золотава корона, <br />
-                що втримує небо – крона. <br />
-              </div>
+              Дерева, бриніть, випромінюйтесь! <br />
+              Допоки ще не спрямили нас, <br />
+              на нас золотава корона, <br />
+              що втримує небо – крона. <br />
             </div>
           </div>
-          <div class="card-poems cards" id="myways">
-            <div class="card-poem">
-              <div class="poems-title">* * *</div>
-              <div class="card-poem-text">
-                Шляхи мої, доріжки, <br />
-                підступними бичами <br />
-                лупцюють чорні кішки - <br />
-                я їх не помічаю… <br />
+        </div>
+        <div class="card-poems cards" id="myways">
+          <div class="card-poem">
+            <div class="poems-title">* * *</div>
+            <div class="card-poem-text">
+              Шляхи мої, доріжки, <br />
+              підступними бичами <br />
+              лупцюють чорні кішки - <br />
+              я їх не помічаю… <br />
 
-                Шляхи мої, вітром продуті, <br />
-                жорстокими бичами <br />
-                лупцюють чорнії думи. <br />
-                Тарганю їх днями й ночами. <br />
+              Шляхи мої, вітром продуті, <br />
+              жорстокими бичами <br />
+              лупцюють чорнії думи. <br />
+              Тарганю їх днями й ночами. <br />
 
-                Не вірю загальним прикметам <br />
-                в надії на милість Бога. <br />
-                У світлі і темні тенета <br />
-                ведуть мене знову дороги. <br />
-              </div>
+              Не вірю загальним прикметам <br />
+              в надії на милість Бога. <br />
+              У світлі і темні тенета <br />
+              ведуть мене знову дороги. <br />
             </div>
           </div>
-          <div class="card-poems cards" id="howstrange">
-            <div class="card-poem">
-              <div class="poems-title">* * *</div>
-              <div class="card-poem-text">
-                Як дивно - раптом дощик на мосту, <br />
-                а я стою між небом і землею, <br />
-                ні, вже лечу, втішаюсь і росту <br />
-                між тугою та радістю своєю! <br />
+        </div>
+        <div class="card-poems cards" id="howstrange">
+          <div class="card-poem">
+            <div class="poems-title">* * *</div>
+            <div class="card-poem-text">
+              Як дивно - раптом дощик на мосту, <br />
+              а я стою між небом і землею, <br />
+              ні, вже лечу, втішаюсь і росту <br />
+              між тугою та радістю своєю! <br />
 
-                Ось так ми збіглись: дощ, і я, і міст! <br />
-                Благословляючи подію цю, я <br />
-                вже надаю їй особливий зміст – <br />
-                як дощ мій несподіваний танцюю <br />
-                веселе й юне, мабуть давній твіст. <br />
+              Ось так ми збіглись: дощ, і я, і міст! <br />
+              Благословляючи подію цю, я <br />
+              вже надаю їй особливий зміст – <br />
+              як дощ мій несподіваний танцюю <br />
+              веселе й юне, мабуть давній твіст. <br />
 
-                А дощ сміється і мене лупцює, <br />
-                і райдугою вигнутий цей міст. <br />
+              А дощ сміється і мене лупцює, <br />
+              і райдугою вигнутий цей міст. <br />
 
-                Та дощ-пустун побавився і скис – <br />
-                він коли схоче, от тоді й працює. <br />
-                А що ж невтомно працьовитий міст? <br />
-                А він тримає світле небо в скельцях! <br />
-                Дніпро під нами вигинає хвіст. <br />
+              Та дощ-пустун побавився і скис – <br />
+              він коли схоче, от тоді й працює. <br />
+              А що ж невтомно працьовитий міст? <br />
+              А він тримає світле небо в скельцях! <br />
+              Дніпро під нами вигинає хвіст. <br />
 
-                Облита із небесного відерця <br />
-                я танцювала щойно на веселці – <br />
-                сім кольорів цвітуть в моєму серці. <br />
-                Далеко Лета, і далеко Стікс. <br />
-              </div>
+              Облита із небесного відерця <br />
+              я танцювала щойно на веселці – <br />
+              сім кольорів цвітуть в моєму серці. <br />
+              Далеко Лета, і далеко Стікс. <br />
             </div>
           </div>
-          <div class="card-poems cards" id="earth">
-            <div class="card-poem">
-              <div class="poems-title">* * *</div>
-              <div class="card-poem-text">
-                А вісь земна тримається <br />
-                теплими очима, <br />
-                уважними очима, <br />
-                повними сліз. <br />
+        </div>
+        <div class="card-poems cards" id="earth">
+          <div class="card-poem">
+            <div class="poems-title">* * *</div>
+            <div class="card-poem-text">
+              А вісь земна тримається <br />
+              теплими очима, <br />
+              уважними очима, <br />
+              повними сліз. <br />
 
-                Материки пливуть <br />
-                під пильними поглядами, <br />
-                вологими поглядами, <br />
-                повними любові. <br />
+              Материки пливуть <br />
+              під пильними поглядами, <br />
+              вологими поглядами, <br />
+              повними любові. <br />
 
-                Ну, а коли заплющаться <br />
-                пречисті очі, променисті очі – <br />
-                вони передають земне тяжіння <br />
-                очам розплющеним, <br />
-                наповнюючи їх сльозами, <br />
-                наповнюючи дивуванням, <br />
-                спроможним зберігати вісь земну. <br />
-              </div>
+              Ну, а коли заплющаться <br />
+              пречисті очі, променисті очі – <br />
+              вони передають земне тяжіння <br />
+              очам розплющеним, <br />
+              наповнюючи їх сльозами, <br />
+              наповнюючи дивуванням, <br />
+              спроможним зберігати вісь земну. <br />
             </div>
           </div>
-          <div class="card-poems cards" id="thief">
-            <div class="card-poem">
-              <div class="poems-title">* * *</div>
-              <div class="card-poem-text">
-                Найбільша злодійка – не смерть… <br />
-                Найбільша злодійка – жорстокість, <br />
-                якої досить, досить, досить, <br />
-                з якою Храм розбитий вщерть. <br />
+        </div>
+        <div class="card-poems cards" id="thief">
+          <div class="card-poem">
+            <div class="poems-title">* * *</div>
+            <div class="card-poem-text">
+              Найбільша злодійка – не смерть… <br />
+              Найбільша злодійка – жорстокість, <br />
+              якої досить, досить, досить, <br />
+              з якою Храм розбитий вщерть. <br />
 
-                Найбільша злодійка – не смерть! <br />
-                Найбільша злодійка – байдужість. <br />
-                Як очі холодно примружить <br />
-                той пан, який по духу – смерд… <br />
+              Найбільша злодійка – не смерть! <br />
+              Найбільша злодійка – байдужість. <br />
+              Як очі холодно примружить <br />
+              той пан, який по духу – смерд… <br />
 
-                Найбільша злодійка – не смерть. <br />
-                Найбільша злодійка – це втрата <br />
-                любові в нас. І пам’ятати <br />
-                я маю далі і тепер: <br />
-                любов, яка зігріла долю <br />
-                і йде від тих, кого нема, <br />
-                любов лишається зі мною –  <br />
-                тоді їх жертва не дарма. <br />
+              Найбільша злодійка – не смерть. <br />
+              Найбільша злодійка – це втрата <br />
+              любові в нас. І пам’ятати <br />
+              я маю далі і тепер: <br />
+              любов, яка зігріла долю <br />
+              і йде від тих, кого нема, <br />
+              любов лишається зі мною –  <br />
+              тоді їх жертва не дарма. <br />
 
-                Ні білого світу, ні себе не знаю. <br />
-                Спливає, спливає життя. <br />
+              Ні білого світу, ні себе не знаю. <br />
+              Спливає, спливає життя. <br />
 
-                А між тим <br />
-                садиба моя, як солодка Даная <br />
-                усипана щедро дощем золотим. <br />
+              А між тим <br />
+              садиба моя, як солодка Даная <br />
+              усипана щедро дощем золотим. <br />
 
-                Дивлюся на себе, на фото дивлюся… <br />
-                Я ж – дівчинка! Дівчина! Ап – і бабуся! <br />
+              Дивлюся на себе, на фото дивлюся… <br />
+              Я ж – дівчинка! Дівчина! Ап – і бабуся! <br />
 
-                Дивлюся на тебе – і не надивлюся! <br />
-                А промені з неба все ллються і ллються… <br />
-              </div>
+              Дивлюся на тебе – і не надивлюся! <br />
+              А промені з неба все ллються і ллються… <br />
             </div>
           </div>
-          <div class="card-poems cards" id="closedbook">
-            <div class="card-poem">
-              <div class="poems-title">Закрита книжка</div>
-              <div class="card-poem-text">
-                Вірші мої – полохливі метелики, <br />
-                стиснуті в темряві між сторінок. <br />
-                Та випадає їм щастя миттєве – <br />
-                торкнутися серця твого і думок. <br />
-              </div>
+        </div>
+        <div class="card-poems cards" id="closedbook">
+          <div class="card-poem">
+            <div class="poems-title">Закрита книжка</div>
+            <div class="card-poem-text">
+              Вірші мої – полохливі метелики, <br />
+              стиснуті в темряві між сторінок. <br />
+              Та випадає їм щастя миттєве – <br />
+              торкнутися серця твого і думок. <br />
             </div>
           </div>
-          <div class="card-poems cards" id="blocada">
-            <div class="card-poem">
-              <div class="poems-title">Блокада</div>
-              <div class="card-poem-text">
-                На фанерці тягли ленінградця. <br />
-                Скільки зим пройшло…феєрверків… <br />
-                нових війн… переможних овацій… <br />
-                Але досі скрипить та фанерка. <br />
-              </div>
+        </div>
+        <div class="card-poems cards" id="blocada">
+          <div class="card-poem">
+            <div class="poems-title">Блокада</div>
+            <div class="card-poem-text">
+              На фанерці тягли ленінградця. <br />
+              Скільки зим пройшло…феєрверків… <br />
+              нових війн… переможних овацій… <br />
+              Але досі скрипить та фанерка. <br />
             </div>
           </div>
-          <div class="card-poems cards" id="donina">
-            <div class="card-poem">
-              <div class="poems-title">Донiна Ялинка</div>
-              <div class="card-poem-text">
-                І <br />
-                Раптові короткі збори, <br />
-                поспішне тривожне прощання: <br />
-                – Побачимось , доню, з тобою!.. <br />
-                А далі – колони за обрій, <br />
-                а далі – сирен завивання, <br />
-                а далі – суцільна непевність, <br />
-                що вибух не розведе нас. <br />
+        </div>
+        <div class="card-poems cards" id="donina">
+          <div class="card-poem">
+            <div class="poems-title">Донiна Ялинка</div>
+            <div class="card-poem-text">
+              І <br />
+              Раптові короткі збори, <br />
+              поспішне тривожне прощання: <br />
+              – Побачимось , доню, з тобою!.. <br />
+              А далі – колони за обрій, <br />
+              а далі – сирен завивання, <br />
+              а далі – суцільна непевність, <br />
+              що вибух не розведе нас. <br />
 
-                А в небі – як жилки на скронях, <br />
-                сліди від смертельної зброї, <br />
-                неначе став зримим і явним <br />
-                над рідним будинком диявол. <br />
+              А в небі – як жилки на скронях, <br />
+              сліди від смертельної зброї, <br />
+              неначе став зримим і явним <br />
+              над рідним будинком диявол. <br />
 
-                Жорсткий божевільний лютий <br />
-                велів нам про спокій забути, <br />
-                хотів не впустити вЕсну, <br />
-                бажав, щоби крига не скресла. <br />
+              Жорсткий божевільний лютий <br />
+              велів нам про спокій забути, <br />
+              хотів не впустити вЕсну, <br />
+              бажав, щоби крига не скресла. <br />
 
-                Та зелень прорвала облогу, <br />
-                неначе вже мир, слава Богу. <br />
-                Черешня стоїть у короні, <br />
-                кульбабки в траві – як на троні. <br />
-                На них – форма хоч не військова, <br />
-                та витримка обов’язкова. <br />
+              Та зелень прорвала облогу, <br />
+              неначе вже мир, слава Богу. <br />
+              Черешня стоїть у короні, <br />
+              кульбабки в траві – як на троні. <br />
+              На них – форма хоч не військова, <br />
+              та витримка обов’язкова. <br />
 
-                Сміливчики безборонні – <br />
-                тюльпани відкрили обличчя, <br />
-                бузок намагається звично <br />
-                підставити сонечку грона… <br />
-                Усе це нездолане військо <br />
-                війні протидіяти вийшло. <br />
+              Сміливчики безборонні – <br />
+              тюльпани відкрили обличчя, <br />
+              бузок намагається звично <br />
+              підставити сонечку грона… <br />
+              Усе це нездолане військо <br />
+              війні протидіяти вийшло. <br />
 
-                Шалено, відважно і вперто <br />
-                усе опирається смерті! <br />
-                У цьому є щось героїчне – <br />
-                усім напираючим роєм <br />
-                безслівним, дзвінким і беззбройним <br />
-                з хаОсом ввійти в протиріччя! <br />
+              Шалено, відважно і вперто <br />
+              усе опирається смерті! <br />
+              У цьому є щось героїчне – <br />
+              усім напираючим роєм <br />
+              безслівним, дзвінким і беззбройним <br />
+              з хаОсом ввійти в протиріччя! <br />
 
-                Весна ароматами м’яти <br />
-                встає проти зайди-гармати, <br />
-                іде проти сірого танку <br />
-                в атаку, в атаку, в атаку! <br />
+              Весна ароматами м’яти <br />
+              встає проти зайди-гармати, <br />
+              іде проти сірого танку <br />
+              в атаку, в атаку, в атаку! <br />
 
-                …В кутку нежилої кімнати <br />
-                ялинка блищить новорічна, <br />
-                то спогад про мир, і про свято… <br />
+              …В кутку нежилої кімнати <br />
+              ялинка блищить новорічна, <br />
+              то спогад про мир, і про свято… <br />
 
-                Як складені разом долоні, <br />
-                ялинка чекає на доню, <br />
-                бо та прикрашала це віття. <br />
+              Як складені разом долоні, <br />
+              ялинка чекає на доню, <br />
+              бо та прикрашала це віття. <br />
 
-                Ялинка ще мирна. Цивільна.. <br />
+              Ялинка ще мирна. Цивільна.. <br />
 
-                ІІ <br />
-                Лютий розбив і мости, і дороги, <br />
-                поруйнував і будівлі, і долі, <br />
-                хижо заслав до нас орків безрогих – <br />
-                вершників смерті, розлуки і болю, <br />
-                тих, що хотіли пройтись тут парадом… <br />
+              ІІ <br />
+              Лютий розбив і мости, і дороги, <br />
+              поруйнував і будівлі, і долі, <br />
+              хижо заслав до нас орків безрогих – <br />
+              вершників смерті, розлуки і болю, <br />
+              тих, що хотіли пройтись тут парадом… <br />
 
-                Наша ялинка чекає на Ладу, <br />
-                як Україна – на перемогу. <br />
-                Віримо в воїнів наших, як в Бога! <br />
-              </div>
+              Наша ялинка чекає на Ладу, <br />
+              як Україна – на перемогу. <br />
+              Віримо в воїнів наших, як в Бога! <br />
             </div>
           </div>
-          <div class="card-poems cards" id="blocada">
-            <div class="card-poem">
-              <div class="poems-title">Блокада</div>
-              <div class="card-poem-text">
-                На фанерці тягли ленінградця. <br />
-                Скільки зим пройшло…феєрверків… <br />
-                нових війн… переможних овацій… <br />
-                Але досі скрипить та фанерка. <br />
-              </div>
+        </div>
+        <div class="card-poems cards" id="blocada">
+          <div class="card-poem">
+            <div class="poems-title">Блокада</div>
+            <div class="card-poem-text">
+              На фанерці тягли ленінградця. <br />
+              Скільки зим пройшло…феєрверків… <br />
+              нових війн… переможних овацій… <br />
+              Але досі скрипить та фанерка. <br />
             </div>
           </div>
-          <div class="card-poems cards" id="swift">
-            <div class="card-poem">
-              <div class="poems-title">* * *</div>
-              <div class="card-poem-text">
-                Відключіть окупантів не тільки від SWIFT, <br />
-                відключіть від нормальних сучасних країн, <br />
-                відключіть їх від дихання серед усіх! <br />
+        </div>
+        <div class="card-poems cards" id="swift">
+          <div class="card-poem">
+            <div class="poems-title">* * *</div>
+            <div class="card-poem-text">
+              Відключіть окупантів не тільки від SWIFT, <br />
+              відключіть від нормальних сучасних країн, <br />
+              відключіть їх від дихання серед усіх! <br />
 
-                В Україні вже стільки смертей і руїн, <br />
-                стільки жаху в очах й несподіваних сліз – <br />
-                відключімо країну ракет і беріз <br />
-                від братерства, любові, від віри у те, <br />
-                що в країні тій дикій десь совість росте! <br />
+              В Україні вже стільки смертей і руїн, <br />
+              стільки жаху в очах й несподіваних сліз – <br />
+              відключімо країну ракет і беріз <br />
+              від братерства, любові, від віри у те, <br />
+              що в країні тій дикій десь совість росте! <br />
 
-                Суне в танках минуле ­– тут битва епох <br />
-                під вогнем, між уламками сіл і мостів. <br />
-                Вже без жодних ілюзій прокинулись всі. <br />
-                В українських шевронах стоїть з нами Бог! <br />
-              </div>
+              Суне в танках минуле ­– тут битва епох <br />
+              під вогнем, між уламками сіл і мостів. <br />
+              Вже без жодних ілюзій прокинулись всі. <br />
+              В українських шевронах стоїть з нами Бог! <br />
             </div>
           </div>
-          <div class="card-poems cards" id="koli">
-            <div class="card-poem">
-              <div class="poems-title">* * *</div>
-              <div class="card-poem-text">
-                Коли ми проривались на свободу, <br />
-                раділи нам країни і народи. <br />
-                Вітання ми приймали звідусіль <br />
-                і вірили у нашу перемогу, <br />
-                й не відчували довжини дороги. <br />
+        </div>
+        <div class="card-poems cards" id="koli">
+          <div class="card-poem">
+            <div class="poems-title">* * *</div>
+            <div class="card-poem-text">
+              Коли ми проривались на свободу, <br />
+              раділи нам країни і народи. <br />
+              Вітання ми приймали звідусіль <br />
+              і вірили у нашу перемогу, <br />
+              й не відчували довжини дороги. <br />
 
-                Та звіром став найближчий наш сусід. <br />
+              Та звіром став найближчий наш сусід. <br />
 
-                Ми йшли по замінованій дорозі, <br />
-                і вже здавалось, що дійти не в змозі, <br />
-                що на дорозі тут залишимось усі. <br />
+              Ми йшли по замінованій дорозі, <br />
+              і вже здавалось, що дійти не в змозі, <br />
+              що на дорозі тут залишимось усі. <br />
 
-                У небі грала райдуга над нами, <br />
-                та вибухали міни під ногами. <br />
-                Втрачали кращих ми і далі йшли <br />
-                ридаючи і помолившись Богу. <br />
-                Долали наполегливо дорогу, <br />
-                свободу виглядали із імли. <br />
-                Пташки співали смерті непокору, <br />
-                обабіч цвів рясний жовтець й цикорій – <br />
-                не помічали ми щедрот оцих, <br />
-                бо щохвилини підсипав нам горя <br />
-                затятий та імперські-хворий <br />
-                звір ядерний із кнопкою в руці. <br />
-              </div>
+              У небі грала райдуга над нами, <br />
+              та вибухали міни під ногами. <br />
+              Втрачали кращих ми і далі йшли <br />
+              ридаючи і помолившись Богу. <br />
+              Долали наполегливо дорогу, <br />
+              свободу виглядали із імли. <br />
+              Пташки співали смерті непокору, <br />
+              обабіч цвів рясний жовтець й цикорій – <br />
+              не помічали ми щедрот оцих, <br />
+              бо щохвилини підсипав нам горя <br />
+              затятий та імперські-хворий <br />
+              звір ядерний із кнопкою в руці. <br />
             </div>
           </div>
-          <div class="card-poems cards" id="spring">
-            <div class="card-poem">
-              <div class="poems-title">* * *</div>
-              <div class="card-poem-text">
-                Не прощаюся з весною, <br />
-                всіх люблю, хто є зі мною <br />
-                в час, обпалений війною <br />
-                нищівною, надскладною, <br />
-                несподівано-дурною <br />
-                й по-ординські руйнівною! <br />
-                Переможемо війну – <br />
-                знов зустрінемо весну, <br />
-                і її красу земну, <br />
-                не трагічну, не сумну! <br />
-                Я в цей світ прийшла весною – <br />
-                завжди свято це зі мною! <br />
-              </div>
+        </div>
+        <div class="card-poems cards" id="spring">
+          <div class="card-poem">
+            <div class="poems-title">* * *</div>
+            <div class="card-poem-text">
+              Не прощаюся з весною, <br />
+              всіх люблю, хто є зі мною <br />
+              в час, обпалений війною <br />
+              нищівною, надскладною, <br />
+              несподівано-дурною <br />
+              й по-ординські руйнівною! <br />
+              Переможемо війну – <br />
+              знов зустрінемо весну, <br />
+              і її красу земну, <br />
+              не трагічну, не сумну! <br />
+              Я в цей світ прийшла весною – <br />
+              завжди свято це зі мною! <br />
             </div>
           </div>
-          <div class="card-poems cards" id="birdsflewaway">
-            <div class="card-poem">
-              <div class="poems-title">* * *</div>
-              <div class="card-poem-text">
-                Порозліталось від війни пташок чимало, <br />
-                та залишилася лазоревка-синичка. <br />
-                Чому непереможна і патріотична? <br />
-                Бо – в українських кольорах! І ЛЮБИТЬ САЛО! <br />
-                По зимах не співають солов'ї та сойки, <br />
-                та є провісниця весни і перемоги ­– <br />
-                про злодіяння орків все доносить Богу, <br />
-                і нас, знесилених, втішає ніжним зойком. <br />
-              </div>
+        </div>
+        <div class="card-poems cards" id="birdsflewaway">
+          <div class="card-poem">
+            <div class="poems-title">* * *</div>
+            <div class="card-poem-text">
+              Порозліталось від війни пташок чимало, <br />
+              та залишилася лазоревка-синичка. <br />
+              Чому непереможна і патріотична? <br />
+              Бо – в українських кольорах! І ЛЮБИТЬ САЛО! <br />
+              По зимах не співають солов'ї та сойки, <br />
+              та є провісниця весни і перемоги ­– <br />
+              про злодіяння орків все доносить Богу, <br />
+              і нас, знесилених, втішає ніжним зойком. <br />
             </div>
           </div>
-          <div class="card-poems cards" id="svo">
-            <div class="card-poem">
-              <div class="poems-title">СВО</div>
-              <div class="card-poem-text">
-                Свобода вас не обирає. <br />
-                Вуста покорою звело. <br />
-                В вас – ані пекла, ані раю. <br />
-                Мовчанням зміцнюєте зло. <br />
+        </div>
+        <div class="card-poems cards" id="svo">
+          <div class="card-poem">
+            <div class="poems-title">СВО</div>
+            <div class="card-poem-text">
+              Свобода вас не обирає. <br />
+              Вуста покорою звело. <br />
+              В вас – ані пекла, ані раю. <br />
+              Мовчанням зміцнюєте зло. <br />
 
-                За сірі рольові костюми <br />
-                не висловите дум своїх – <br />
-                лакейськи платите безумним <br />
-                убивствам на полях чужих. <br />
-                І так щоденно, так старанно <br />
-                вшановуєте цей парад… <br />
-                Та той лиш знає, як це марно, <br />
-                хто в чужім полі помирав. <br />
-              </div>
+              За сірі рольові костюми <br />
+              не висловите дум своїх – <br />
+              лакейськи платите безумним <br />
+              убивствам на полях чужих. <br />
+              І так щоденно, так старанно <br />
+              вшановуєте цей парад… <br />
+              Та той лиш знає, як це марно, <br />
+              хто в чужім полі помирав. <br />
             </div>
           </div>
-          <div class="card-poems cards" id="dam">
-            <div class="card-poem">
-              <div class="poems-title">Дамба</div>
-              <div class="card-poem-text">
-                Україну сльози затопили – стільки сліз, що вибухає мозок! <br />
-                Людський світе, економиш сили? Зупинити сатану не можеш? Україна
-                <br />
-                людству, наче дамба – зло вселенське стримує щоденно. Так, ми
-                <br />
-                вперто стоїмо тут. Нам би пробудити світ. Бо смерть буденна
-                <br />
-                множиться, вкриває Україну із завзяттям бісовським невпинним.
-                <br />
-                Синьо-жовте поле прапорове покриває землю, повну крові. <br />
-              </div>
+        </div>
+        <div class="card-poems cards" id="dam">
+          <div class="card-poem">
+            <div class="poems-title">Дамба</div>
+            <div class="card-poem-text">
+              Україну сльози затопили – стільки сліз, що вибухає мозок! <br />
+              Людський світе, економиш сили? Зупинити сатану не можеш? Україна
+              <br />
+              людству, наче дамба – зло вселенське стримує щоденно. Так, ми
+              <br />
+              вперто стоїмо тут. Нам би пробудити світ. Бо смерть буденна
+              <br />
+              множиться, вкриває Україну із завзяттям бісовським невпинним.
+              <br />
+              Синьо-жовте поле прапорове покриває землю, повну крові. <br />
             </div>
           </div>
+        </div>
 
-          <div class="card-poems cards" id="war">
-            <div class="card-poem">
-              <div class="poems-title">Вiйна</div>
-              <div class="card-poem-text">
-                Старенька руки розвела, <br />
-                скликає світ на допомогу, <br />
-                стоїть розп'яттям край села, <br />
-                мов ловить у повітрі Бога. <br />
+        <div class="card-poems cards" id="war">
+          <div class="card-poem">
+            <div class="poems-title">Вiйна</div>
+            <div class="card-poem-text">
+              Старенька руки розвела, <br />
+              скликає світ на допомогу, <br />
+              стоїть розп'яттям край села, <br />
+              мов ловить у повітрі Бога. <br />
 
-                Село – як той дракон пройшов – <br />
-                палає так, що видно Богу! <br />
+              Село – як той дракон пройшов – <br />
+              палає так, що видно Богу! <br />
 
-                Чи видно те розп'яття, що <br />
-                скликає світ на допомогу?.. <br />
+              Чи видно те розп'яття, що <br />
+              скликає світ на допомогу?.. <br />
 
-                ХХІ століття <br />
-                Садок вишневий обгорів, бо <br />
-                він теж на захисті стояв. <br />
-                А коло нього – дика вирва, <br />
-                а в небі – зграя чорних  ґав, <br />
-                сполоханих гудінням танків, <br />
-                "Тайфунів", "Градів"… <br />
-                Цей парад <br />
-                готують орки до атаки, <br />
-                до щедрих нескінченних втрат… <br />
+              ХХІ століття <br />
+              Садок вишневий обгорів, бо <br />
+              він теж на захисті стояв. <br />
+              А коло нього – дика вирва, <br />
+              а в небі – зграя чорних  ґав, <br />
+              сполоханих гудінням танків, <br />
+              "Тайфунів", "Градів"… <br />
+              Цей парад <br />
+              готують орки до атаки, <br />
+              до щедрих нескінченних втрат… <br />
 
-                Багряний песик одинокий <br />
-                тремтить від реву двигунів <br />
-                і озира вцілілим оком <br />
-                пейзаж роботи дикунів. <br />
+              Багряний песик одинокий <br />
+              тремтить від реву двигунів <br />
+              і озира вцілілим оком <br />
+              пейзаж роботи дикунів. <br />
 
-                Вже захололи діти й мати – <br />
-                застигло небо ув очах… <br />
+              Вже захололи діти й мати – <br />
+              застигло небо ув очах… <br />
 
-                Ідуть забрьохані солдати <br />
-                і покривають чорним матом <br />
-                усіх, хто цю війну почав. <br />
+              Ідуть забрьохані солдати <br />
+              і покривають чорним матом <br />
+              усіх, хто цю війну почав. <br />
 
-                Як відступали орки звідти, <br />
-                де мати з дітками жила, <br />
-                садок вишневий той став свідком <br />
-                здолання світового зла. <br />
-              </div>
+              Як відступали орки звідти, <br />
+              де мати з дітками жила, <br />
+              садок вишневий той став свідком <br />
+              здолання світового зла. <br />
             </div>
           </div>
-          <div class="card-poems cards" id="cathedral">
-            <div class="card-poem">
-              <div class="poems-title">Собор</div>
-              <div class="card-poem-text">
-                Над крахом собору, <br />
-                як нАд полем бою <br />
-                світанок німотний завмер. <br />
-                Замислений ворон <br />
-                набачився горя, <br />
-                й на поміч склика дотепер. <br />
+        </div>
+        <div class="card-poems cards" id="cathedral">
+          <div class="card-poem">
+            <div class="poems-title">Собор</div>
+            <div class="card-poem-text">
+              Над крахом собору, <br />
+              як нАд полем бою <br />
+              світанок німотний завмер. <br />
+              Замислений ворон <br />
+              набачився горя, <br />
+              й на поміч склика дотепер. <br />
 
-                Розбиті склепіння, <br />
-                як рани безвинних, <br />
-                з котрих ні один не воскрес. <br />
-                Дзвіниця сумлінно <br />
-                у долі вдовиній <br />
-                тримає мовчання небес. <br />
+              Розбиті склепіння, <br />
+              як рани безвинних, <br />
+              з котрих ні один не воскрес. <br />
+              Дзвіниця сумлінно <br />
+              у долі вдовиній <br />
+              тримає мовчання небес. <br />
 
-                А нижче собору, <br />
-                обравши свободу <br />
-                і вічність небесних світил, <br />
-                розіп'ятий цвинтар – <br />
-                мов руки розкинув, <br />
-                в обіймах лани прихистив. <br />
-              </div>
+              А нижче собору, <br />
+              обравши свободу <br />
+              і вічність небесних світил, <br />
+              розіп'ятий цвинтар – <br />
+              мов руки розкинув, <br />
+              в обіймах лани прихистив. <br />
             </div>
           </div>
-          <div class="card-poems cards" id="gray">
-            <div class="card-poem">
-              <div class="poems-title">Сивi волошки</div>
-              <div class="card-poem-text">
-                Світле і тепле, немов паляниця. <br />
-                Темне, як стиглі яскраві каштани. <br />
-                Юне волосся – для танцю під вітром, <br />
-                для поцілунків барвистого сонця. <br />
+        </div>
+        <div class="card-poems cards" id="gray">
+          <div class="card-poem">
+            <div class="poems-title">Сивi волошки</div>
+            <div class="card-poem-text">
+              Світле і тепле, немов паляниця. <br />
+              Темне, як стиглі яскраві каштани. <br />
+              Юне волосся – для танцю під вітром, <br />
+              для поцілунків барвистого сонця. <br />
 
-                Чорне. Русяве. Руденьке, як пломінь. <br />
-                Вільне волосся, голублене небом… <br />
+              Чорне. Русяве. Руденьке, як пломінь. <br />
+              Вільне волосся, голублене небом… <br />
 
-                …Бій був у лісі, і сльози соснові <br />
-                ті кольори повертають нам знову. <br />
-                Бій був жорстоким, і юне волосся <br />
-                чимось червоним й липким залилося. <br />
+              …Бій був у лісі, і сльози соснові <br />
+              ті кольори повертають нам знову. <br />
+              Бій був жорстоким, і юне волосся <br />
+              чимось червоним й липким залилося. <br />
 
-                Вільне волосся навіщо росії? <br />
-                Щоб не блищало, не посивіло? <br />
+              Вільне волосся навіщо росії? <br />
+              Щоб не блищало, не посивіло? <br />
 
-                Юних голівок під небом немає – <br />
-                сивий туман сиві сосни займає. <br />
-                А на могилах сивіють волошки. <br />
-                Вітер влітає в обійми порожні. <br />
+              Юних голівок під небом немає – <br />
+              сивий туман сиві сосни займає. <br />
+              А на могилах сивіють волошки. <br />
+              Вітер влітає в обійми порожні. <br />
 
-                Знову шикуються юні солдати – <br />
-                жадібним кулям є що віддавати! <br />
+              Знову шикуються юні солдати – <br />
+              жадібним кулям є що віддавати! <br />
 
-                Сховано в сірі однакові каски <br />
-                вільне волосся – живе і прекрасне… <br />
-              </div>
+              Сховано в сірі однакові каски <br />
+              вільне волосся – живе і прекрасне… <br />
             </div>
           </div>
-          <div class="card-poems cards" id="suddenlystop">
-            <div class="card-poem">
-              <div class="poems-title">* * *</div>
-              <div class="card-poem-text">
-                Раптом зупинишся серед столичного галасу, <br />
-                де – на вітрини всі погляди, або в гаджети; <br />
-                глянеш у натовп – старий роздивляється пильно так <br />
-                щось там у небі байдужому і неспокійному. <br />
+        </div>
+        <div class="card-poems cards" id="suddenlystop">
+          <div class="card-poem">
+            <div class="poems-title">* * *</div>
+            <div class="card-poem-text">
+              Раптом зупинишся серед столичного галасу, <br />
+              де – на вітрини всі погляди, або в гаджети; <br />
+              глянеш у натовп – старий роздивляється пильно так <br />
+              щось там у небі байдужому і неспокійному. <br />
 
-                Може стоїть він у спогадах, може – у маренні, <br />
-                може милується блідо-рожевими хмарами, <br />
-                може звіряє по небу доріженьку втрачену, <br />
-                може боїться розлити страждання гаряче… <br />
-              </div>
+              Може стоїть він у спогадах, може – у маренні, <br />
+              може милується блідо-рожевими хмарами, <br />
+              може звіряє по небу доріженьку втрачену, <br />
+              може боїться розлити страждання гаряче… <br />
             </div>
           </div>
-          <div class="card-poems cards" id="illya">
-            <div class="card-poem">
-              <div class="poems-title">Пам'яті Іллі Чернілевського</div>
-              <div class="card-poem-text">
-                Ви співаєте: "Ми переможемо! <br />
-                В цій війні ні за що не програємо!" <br />
-                Ви співайте! А ми… ми не граємо. <br />
-                За співаючого, за кожного <br />
-                день і ніч ми б’ємось й помираємо. <br />
+        </div>
+        <div class="card-poems cards" id="illya">
+          <div class="card-poem">
+            <div class="poems-title">Пам'яті Іллі Чернілевського</div>
+            <div class="card-poem-text">
+              Ви співаєте: "Ми переможемо! <br />
+              В цій війні ні за що не програємо!" <br />
+              Ви співайте! А ми… ми не граємо. <br />
+              За співаючого, за кожного <br />
+              день і ніч ми б’ємось й помираємо. <br />
 
-                Менше б пекла – не треба вже раю нам, <br />
-                ми були не для жахів народжені. <br />
-                Землю риємо, наче звикаємо <br />
-                до землі. І землі присягаємо. <br />
-                Ми – лежачі, ми не подорожні вже: <br />
-                в лютий холод лежи за сараєм і <br />
-                дуй на пальці вже геть обморожені – <br />
-                зустрічай цих ординських карателів, <br />
-                натискай на гачок… і стривожене <br />
-                гайвороння летить над руїнами <br />
-                і кричить, що біда з Україною! <br />
-                Ми тут нищимо, щоб вас не знищили, <br />
-                щоб біда не була для вас звичною. <br />
+              Менше б пекла – не треба вже раю нам, <br />
+              ми були не для жахів народжені. <br />
+              Землю риємо, наче звикаємо <br />
+              до землі. І землі присягаємо. <br />
+              Ми – лежачі, ми не подорожні вже: <br />
+              в лютий холод лежи за сараєм і <br />
+              дуй на пальці вже геть обморожені – <br />
+              зустрічай цих ординських карателів, <br />
+              натискай на гачок… і стривожене <br />
+              гайвороння летить над руїнами <br />
+              і кричить, що біда з Україною! <br />
+              Ми тут нищимо, щоб вас не знищили, <br />
+              щоб біда не була для вас звичною. <br />
 
-                Коли смерть заглядає у вічі нам, <br />
-                боїмося жахливого вищира, <br />
-                бо живі хочуть бути щасливими – <br />
-                під вітрами, під сонцем, під зливами <br />
-                розквітати від рідного погляду, <br />
-                цілуватись вустами вологими… <br />
+              Коли смерть заглядає у вічі нам, <br />
+              боїмося жахливого вищира, <br />
+              бо живі хочуть бути щасливими – <br />
+              під вітрами, під сонцем, під зливами <br />
+              розквітати від рідного погляду, <br />
+              цілуватись вустами вологими… <br />
 
-                Ми й планети своєї не бачили… <br />
-                Ми вбивати й спасатися навчені. <br />
+              Ми й планети своєї не бачили… <br />
+              Ми вбивати й спасатися навчені. <br />
 
-                Ми оглухли від реву гарматного! <br />
-                Де та тиша, що звуть благодатною? <br />
+              Ми оглухли від реву гарматного! <br />
+              Де та тиша, що звуть благодатною? <br />
 
-                А за тишу і мир завжди плата є – <br />
-                молодесенькими солдатами… <br />
+              А за тишу і мир завжди плата є – <br />
+              молодесенькими солдатами… <br />
 
-                Нам би миру й, нарешті, побачення <br />
-                з тим життям, із якого ми вирвані. <br />
-                Вже весна, та її ми не бачимо – <br />
-                бліндажі і траншеї між вирвами. <br />
+              Нам би миру й, нарешті, побачення <br />
+              з тим життям, із якого ми вирвані. <br />
+              Вже весна, та її ми не бачимо – <br />
+              бліндажі і траншеї між вирвами. <br />
 
-                Ви співайте натхненно і голосно, <br />
-                не залишимо вас із поразкою! <br />
-                Це весна – на галявині проліски <br />
-                забагрянились кров'ю солдатською. <br />
+              Ви співайте натхненно і голосно, <br />
+              не залишимо вас із поразкою! <br />
+              Це весна – на галявині проліски <br />
+              забагрянились кров'ю солдатською. <br />
 
-                Не відчуєте ви, як ми плачемо. <br />
-                Це нелюдське, нелюдське напруження! <br />
-                Якщо розквіт весняний побачити <br />
-                ми не встигнемо – ви надолужите. <br />
+              Не відчуєте ви, як ми плачемо. <br />
+              Це нелюдське, нелюдське напруження! <br />
+              Якщо розквіт весняний побачити <br />
+              ми не встигнемо – ви надолужите. <br />
 
-                Перемога й майбутні досягнення <br />
-                кров’ю нашою й потом просякнуті. <br />
+              Перемога й майбутні досягнення <br />
+              кров’ю нашою й потом просякнуті. <br />
 
-                Під шаленими "Смерчами" й "Градами" <br />
-                просуваючись поміж завалами, <br />
-                знову ми піднімаємось, падаємо, <br />
-                і тримаємо світ, щоб співали ви! <br />
-              </div>
+              Під шаленими "Смерчами" й "Градами" <br />
+              просуваючись поміж завалами, <br />
+              знову ми піднімаємось, падаємо, <br />
+              і тримаємо світ, щоб співали ви! <br />
             </div>
           </div>
-          <div class="card-poems cards" id="generoustree">
-            <div class="card-poem">
-              <div class="poems-title">* * *</div>
-              <div class="card-poem-text">
-                О, наше щедре дерево – шовковице! <br />
-                Уже нікому не злічити жертв твоїх… <br />
-                Про те, як виривались ми з совковості, <br />
-                нагадувати світу будеш кожен рік… <br />
-              </div>
+        </div>
+        <div class="card-poems cards" id="generoustree">
+          <div class="card-poem">
+            <div class="poems-title">* * *</div>
+            <div class="card-poem-text">
+              О, наше щедре дерево – шовковице! <br />
+              Уже нікому не злічити жертв твоїх… <br />
+              Про те, як виривались ми з совковості, <br />
+              нагадувати світу будеш кожен рік… <br />
             </div>
           </div>
-          <div class="card-poems cards" id="soul">
-            <div class="card-poem">
-              <div class="poems-title">Душа</div>
-              <div class="card-poem-text">
-                Дівчинка на кулі – <br />
-                паросток розп'ятий – <br />
-                легко, як на святі, <br />
-                втримуєш строкатий, <br />
-                осяйний, бездонний <br />
-                небосхил в долонях. <br />
+        </div>
+        <div class="card-poems cards" id="soul">
+          <div class="card-poem">
+            <div class="poems-title">Душа</div>
+            <div class="card-poem-text">
+              Дівчинка на кулі – <br />
+              паросток розп'ятий – <br />
+              легко, як на святі, <br />
+              втримуєш строкатий, <br />
+              осяйний, бездонний <br />
+              небосхил в долонях. <br />
 
-                Втримайся на кулі <br />
-                з тими, що минули, <br />
-                втримайся на кулі, <br />
-                щоб вітри не здули, <br />
-                втримайся на кулі <br />
-                і не вір в поразку! <br />
+              Втримайся на кулі <br />
+              з тими, що минули, <br />
+              втримайся на кулі, <br />
+              щоб вітри не здули, <br />
+              втримайся на кулі <br />
+              і не вір в поразку! <br />
 
-                В полум'ї та гулі <br />
-                на блакитній кулі, <br />
-                на величній кулі <br />
-                втримайся, будь ласка ... <br />
-              </div>
+              В полум'ї та гулі <br />
+              на блакитній кулі, <br />
+              на величній кулі <br />
+              втримайся, будь ласка ... <br />
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </div>
     <footer class="footer">
       <div

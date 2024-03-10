@@ -22,13 +22,11 @@ function moveSidebar() {
 
 function initSidebar() {
   if (window.innerWidth < 1200) {
-    console.log("isSidebarVisible before function < 1200", isSidebarVisible);
     isSidebarVisible = false;
     sidebar.setAttribute("class", "sidebar-links");
     sidebarBtn.setAttribute("class", "sidebar-btn");
     sidebarBtnIcon.setAttribute("class", "fa-solid fa-angle-right btn-icon");
   } else {
-    console.log("isSidebarVisible before function > 1200", isSidebarVisible);
     isSidebarVisible = true;
     sidebar.setAttribute("class", "sidebar-links sidebar-links-move");
     sidebarBtn.setAttribute("class", "sidebar-btn sidebar-btn-move");
@@ -46,7 +44,6 @@ window.addEventListener(
     } else {
       isSidebarVisible = false;
       moveSidebar();
-      console.log("isSidebarVisible after function > 1200", isSidebarVisible);
     }
   },
   true
@@ -55,7 +52,6 @@ window.addEventListener(
 // poems pages
 function poemPageMove() {
   if (isMovedPage === false) {
-    console.log("isMovedPage ", isMovedPage);
     let cardsArr = document.querySelectorAll(".cards");
     for (let i = 0; i < cardsArr.length; i++) {
       cardsArr[i].setAttribute("class", "card-poems-move cards");
