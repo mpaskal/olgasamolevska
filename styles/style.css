@@ -15,7 +15,7 @@
 
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateX(0px);
   }
 }
 
@@ -179,7 +179,7 @@ h5 {
 .home-article {
   background-color: var(--pages-background-alt);
   color: var(--page-text);
-  flex: 1 1 30rem;
+  width: 100%;
 }
 
 .home-article-card {
@@ -187,7 +187,7 @@ h5 {
 }
 
 .home-article-img {
-  width: 80%;
+  width: 60%;
 }
 
 .home-article-text {
@@ -206,7 +206,6 @@ h5 {
 }
 
 .home-articles {
-  background-color: var(--pages-background);
   color: var(--page-text);
   font-size: 1.3rem;
   font-weight: 600;
@@ -260,7 +259,7 @@ h5 {
   background-color: var(--pages-background);
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
 }
 
@@ -300,7 +299,7 @@ h5 {
 .home-poem {
   background-color: var(--pages-background);
   text-align: center;
-  width: 60%;
+  width: 50%;
 }
 
 .home-poem-text {
@@ -356,11 +355,11 @@ h5 {
 
 /* -- Video -- */
 .home-video-olga-wrap {
+  align-items: center;
   background-color: var(--pages-background);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 40%;
+  width: 35%;
 }
 
 .home-videos {
@@ -1159,7 +1158,7 @@ form {
 
   .home-article-img {
     height: auto;
-    width: 100%;
+    width: 90%;
   }
 
   .home-img {
